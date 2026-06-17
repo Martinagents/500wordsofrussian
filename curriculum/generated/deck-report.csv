@@ -1,0 +1,501 @@
+rank,id,tier,type,english,russian
+1,ru-1,1,phrase,hello,здравствуйте
+2,ru-2,1,phrase,hi,привет
+3,ru-3,1,phrase,goodbye,до свидания
+4,ru-4,1,phrase,thank you,спасибо
+5,ru-5,1,phrase,please,пожалуйста
+6,ru-6,1,lexeme,yes,да
+7,ru-7,1,lexeme,no,нет
+8,ru-8,1,lexeme,I,я
+9,ru-9,1,lexeme,you informal,ты
+10,ru-10,1,lexeme,you polite,вы
+11,ru-11,1,lexeme,he,он
+12,ru-12,1,lexeme,she,она
+13,ru-13,1,lexeme,we,мы
+14,ru-14,1,lexeme,they,они
+15,ru-15,1,lexeme,this,это
+16,ru-16,1,lexeme,what,что
+17,ru-17,1,lexeme,who,кто
+18,ru-18,1,lexeme,where,где
+19,ru-19,1,lexeme,when,когда
+20,ru-20,1,lexeme,how,как
+21,ru-21,1,lexeme,why,почему
+22,ru-22,1,lexeme,which,какой
+23,ru-23,1,lexeme,my,мой
+24,ru-24,1,lexeme,your,ваш
+25,ru-25,1,lexeme,good,хорошо
+26,ru-26,1,lexeme,bad,плохо
+27,ru-27,1,lexeme,big,большой
+28,ru-28,1,lexeme,small,маленький
+29,ru-29,1,lexeme,now,сейчас
+30,ru-30,1,lexeme,today,сегодня
+31,ru-31,1,lexeme,tomorrow,завтра
+32,ru-32,1,lexeme,yesterday,вчера
+33,ru-33,1,lexeme,later,потом
+34,ru-34,1,lexeme,here,здесь
+35,ru-35,1,lexeme,there,там
+36,ru-36,1,lexeme,home,дом
+37,ru-37,1,lexeme,family,семья
+38,ru-38,1,lexeme,mother,мама
+39,ru-39,1,lexeme,father,папа
+40,ru-40,1,lexeme,daughter,дочь
+41,ru-41,1,lexeme,son,сын
+42,ru-42,1,lexeme,girlfriend,девушка
+43,ru-43,1,lexeme,food,еда
+44,ru-44,1,lexeme,water,вода
+45,ru-45,1,lexeme,tea,чай
+46,ru-46,1,lexeme,coffee,кофе
+47,ru-47,1,lexeme,bread,хлеб
+48,ru-48,1,lexeme,soup,суп
+49,ru-49,1,lexeme,meat,мясо
+50,ru-50,1,lexeme,fish,рыба
+51,ru-51,1,lexeme,vegetable,овощ
+52,ru-52,1,lexeme,potato,картошка
+53,ru-53,1,lexeme,salt,соль
+54,ru-54,1,lexeme,sugar,сахар
+55,ru-55,1,lexeme,kitchen,кухня
+56,ru-56,1,lexeme,room,комната
+57,ru-57,1,lexeme,table,стол
+58,ru-58,1,lexeme,chair,стул
+59,ru-59,1,lexeme,bed,кровать
+60,ru-60,1,lexeme,bathroom/toilet,туалет
+61,ru-61,1,lexeme,shop,магазин
+62,ru-62,1,lexeme,street,улица
+63,ru-63,1,lexeme,left,налево
+64,ru-64,1,lexeme,right,направо
+65,ru-65,1,lexeme,straight,прямо
+66,ru-66,1,lexeme,near,рядом
+67,ru-67,1,lexeme,far,далеко
+68,ru-68,1,lexeme,Berlin,Берлин
+69,ru-69,1,lexeme,Russia,Россия
+70,ru-70,1,lexeme,Bulgaria,Болгария
+71,ru-71,1,lexeme,work,работа
+72,ru-72,1,lexeme,day,день
+73,ru-73,1,lexeme,morning,утро
+74,ru-74,1,lexeme,evening,вечер
+75,ru-75,1,lexeme,night,ночь
+76,ru-76,1,lexeme,minute,минута
+77,ru-77,1,lexeme,hour,час
+78,ru-78,1,lexeme,one,один
+79,ru-79,1,lexeme,two,два
+80,ru-80,1,lexeme,three,три
+81,ru-81,1,lexeme,much/many,много
+82,ru-82,1,lexeme,little/a little,мало
+83,ru-83,1,lexeme,more,ещё
+84,ru-84,1,lexeme,very,очень
+85,ru-85,1,lexeme,also,тоже
+86,ru-86,1,lexeme,and,и
+87,ru-87,1,lexeme,or,или
+88,ru-88,1,lexeme,but,но
+89,ru-89,1,lexeme,because,потому что
+90,ru-90,1,lexeme,with,с
+91,ru-91,1,lexeme,without,без
+92,ru-92,1,lexeme,for,для
+93,ru-93,1,lexeme,in/at,в
+94,ru-94,1,lexeme,to/toward,к
+95,ru-95,1,predicate,I want,я хочу
+96,ru-96,1,predicate,I can,я могу
+97,ru-97,1,predicate,may I / it is allowed,можно
+98,ru-98,1,predicate,I need,мне нужно
+99,ru-99,1,predicate,it is necessary,надо
+100,ru-100,1,predicate,I know,я знаю
+101,ru-101,1,predicate,I understand,я понимаю
+102,ru-102,1,predicate,I think,я думаю
+103,ru-103,1,predicate,I speak,я говорю
+104,ru-104,1,predicate,say/tell,сказать
+105,ru-105,1,predicate,ask,спросить
+106,ru-106,1,predicate,repeat,повторить
+107,ru-107,1,predicate,I see,я вижу
+108,ru-108,1,predicate,I hear,я слышу
+109,ru-109,1,predicate,look/watch,смотреть
+110,ru-110,1,predicate,do/make,делать
+111,ru-111,1,predicate,give,дать
+112,ru-112,1,predicate,take,взять
+113,ru-113,1,predicate,help,помочь
+114,ru-114,1,predicate,wait,ждать
+115,ru-115,1,predicate,go on foot,идти
+116,ru-116,1,predicate,go by transport,ехать
+117,ru-117,1,predicate,come/arrive,прийти
+118,ru-118,1,predicate,eat,есть
+119,ru-119,1,predicate,drink,пить
+120,ru-120,1,predicate,live,жить
+121,ru-121,1,predicate,work,работать
+122,ru-122,1,predicate,sleep,спать
+123,ru-123,1,predicate,love/like,любить
+124,ru-124,1,predicate,I like it,мне нравится
+125,ru-125,1,predicate,there is / I have,у меня есть
+126,ru-126,1,predicate,I feel unwell,мне плохо
+127,ru-127,1,frame,I do not want,я не хочу
+128,ru-128,1,frame,I cannot,я не могу
+129,ru-129,1,frame,I do not know,я не знаю
+130,ru-130,1,frame,I do not understand,я не понимаю
+131,ru-131,1,frame,Please repeat,"повторите, пожалуйста"
+132,ru-132,1,frame,Please speak more slowly,"говорите медленнее, пожалуйста"
+133,ru-133,1,frame,What does this mean?,что это значит?
+134,ru-134,1,frame,Where is the toilet?,где туалет?
+135,ru-135,1,frame,Do you have tea?,у вас есть чай?
+136,ru-136,1,frame,Can I help?,я могу помочь?
+137,ru-137,1,frame,Do you need help?,вам нужна помощь?
+138,ru-138,1,frame,I am hungry,я хочу есть
+139,ru-139,1,frame,I am thirsty,я хочу пить
+140,ru-140,1,frame,I am tired,я устал
+141,ru-141,1,frame,It is tasty,это вкусно
+142,ru-142,1,frame,Not now,не сейчас
+143,ru-143,1,frame,Maybe later,"может быть, потом"
+144,ru-144,1,frame,Nice to meet you,очень приятно
+145,ru-145,1,frame,My name is ...,меня зовут ...
+146,ru-146,1,frame,I am from Bulgaria,я из Болгарии
+147,ru-147,1,frame,I live in Berlin,я живу в Берлине
+148,ru-148,1,frame,I am learning Russian,я учу русский
+149,ru-149,1,frame,I speak Bulgarian,я говорю по-болгарски
+150,ru-150,1,frame,I speak a little Russian,я немного говорю по-русски
+151,ru-151,1,frame,How are you?,как дела?
+152,ru-152,1,frame,Everything is good,всё хорошо
+153,ru-153,1,frame,Excuse me,извините
+154,ru-154,1,frame,Sorry,простите
+155,ru-155,1,frame,Good morning,доброе утро
+156,ru-156,1,frame,Good evening,добрый вечер
+157,ru-157,1,lexeme,человек,человек
+158,ru-158,1,lexeme,время,время
+159,ru-159,1,lexeme,год,год
+160,ru-160,1,lexeme,раз,раз
+161,ru-161,1,lexeme,дело,дело
+162,ru-162,1,lexeme,рука,рука
+163,ru-163,1,lexeme,глаз,глаз
+164,ru-164,1,lexeme,место,место
+165,ru-165,1,lexeme,жизнь,жизнь
+166,ru-166,1,lexeme,слово,слово
+167,ru-167,1,lexeme,друг,друг
+168,ru-168,1,lexeme,город,город
+169,ru-169,1,lexeme,машина,машина
+170,ru-170,1,lexeme,дверь,дверь
+171,ru-171,1,lexeme,окно,окно
+172,ru-172,1,lexeme,телефон,телефон
+173,ru-173,1,lexeme,деньги,деньги
+174,ru-174,1,lexeme,билет,билет
+175,ru-175,1,lexeme,поезд,поезд
+176,ru-176,1,lexeme,автобус,автобус
+177,ru-177,1,lexeme,метро,метро
+178,ru-178,1,lexeme,аэропорт,аэропорт
+179,ru-179,1,lexeme,вокзал,вокзал
+180,ru-180,1,lexeme,ресторан,ресторан
+181,ru-181,1,lexeme,кафе,кафе
+182,ru-182,1,lexeme,молоко,молоко
+183,ru-183,1,lexeme,сыр,сыр
+184,ru-184,1,lexeme,яйцо,яйцо
+185,ru-185,1,lexeme,курица,курица
+186,ru-186,1,lexeme,рис,рис
+187,ru-187,1,lexeme,салат,салат
+188,ru-188,1,lexeme,яблоко,яблоко
+189,ru-189,1,lexeme,нож,нож
+190,ru-190,1,lexeme,вилка,вилка
+191,ru-191,1,lexeme,ложка,ложка
+192,ru-192,1,lexeme,тарелка,тарелка
+193,ru-193,1,lexeme,стакан,стакан
+194,ru-194,1,lexeme,горячий,горячий
+195,ru-195,1,lexeme,холодный,холодный
+196,ru-196,1,lexeme,новый,новый
+197,ru-197,1,lexeme,старый,старый
+198,ru-198,1,lexeme,красивый,красивый
+199,ru-199,1,lexeme,русский,русский
+200,ru-200,1,lexeme,английский,английский
+201,ru-201,1,lexeme,болгарский,болгарский
+202,ru-202,1,lexeme,важный,важный
+203,ru-203,1,lexeme,нормально,нормально
+204,ru-204,1,lexeme,быстро,быстро
+205,ru-205,1,lexeme,медленно,медленно
+206,ru-206,1,lexeme,вместе,вместе
+207,ru-207,1,lexeme,один,один
+208,ru-208,1,lexeme,два,два
+209,ru-209,1,lexeme,три,три
+210,ru-210,1,lexeme,четыре,четыре
+211,ru-211,1,lexeme,пять,пять
+212,ru-212,1,lexeme,первый,первый
+213,ru-213,1,lexeme,последний,последний
+214,ru-214,1,lexeme,каждый,каждый
+215,ru-215,1,lexeme,всегда,всегда
+216,ru-216,1,lexeme,иногда,иногда
+217,ru-217,1,lexeme,никогда,никогда
+218,ru-218,1,lexeme,уже,уже
+219,ru-219,1,lexeme,ещё,ещё
+220,ru-220,1,lexeme,рано,рано
+221,ru-221,1,lexeme,поздно,поздно
+222,ru-222,1,lexeme,здесь,здесь
+223,ru-223,1,lexeme,туда,туда
+224,ru-224,1,lexeme,сюда,сюда
+225,ru-225,1,lexeme,назад,назад
+226,ru-226,1,lexeme,вперёд,вперёд
+227,ru-227,1,lexeme,центр,центр
+228,ru-228,1,lexeme,парк,парк
+229,ru-229,1,lexeme,аптека,аптека
+230,ru-230,1,lexeme,врач,врач
+231,ru-231,1,lexeme,температура,температура
+232,ru-232,1,lexeme,голова,голова
+233,ru-233,1,lexeme,живот,живот
+234,ru-234,1,lexeme,больно,больно
+235,ru-235,1,lexeme,помощь,помощь
+236,ru-236,1,lexeme,вопрос,вопрос
+237,ru-237,1,lexeme,ответ,ответ
+238,ru-238,1,lexeme,план,план
+239,ru-239,1,lexeme,встреча,встреча
+240,ru-240,1,lexeme,муж,муж
+241,ru-241,1,lexeme,жена,жена
+242,ru-242,1,lexeme,брат,брат
+243,ru-243,1,lexeme,сестра,сестра
+244,ru-244,1,lexeme,бабушка,бабушка
+245,ru-245,1,lexeme,дедушка,дедушка
+246,ru-246,1,lexeme,ребёнок,ребёнок
+247,ru-247,1,lexeme,родители,родители
+248,ru-248,1,lexeme,гость,гость
+249,ru-249,1,lexeme,подарок,подарок
+250,ru-250,1,lexeme,праздник,праздник
+251,ru-251,1,lexeme,убирать,убирать
+252,ru-252,1,lexeme,готовить,готовить
+253,ru-253,1,lexeme,купить,купить
+254,ru-254,1,lexeme,найти,найти
+255,ru-255,1,lexeme,показать,показать
+256,ru-256,1,lexeme,открыть,открыть
+257,ru-257,1,lexeme,закрыть,закрыть
+258,ru-258,1,lexeme,позвонить,позвонить
+259,ru-259,1,lexeme,писать,писать
+260,ru-260,1,lexeme,читать,читать
+261,ru-261,1,lexeme,учить,учить
+262,ru-262,1,lexeme,помнить,помнить
+263,ru-263,1,lexeme,забыть,забыть
+264,ru-264,1,lexeme,начать,начать
+265,ru-265,1,lexeme,кончить,кончить
+266,ru-266,1,lexeme,сидеть,сидеть
+267,ru-267,1,lexeme,стоять,стоять
+268,ru-268,1,lexeme,лежать,лежать
+269,ru-269,1,lexeme,гулять,гулять
+270,ru-270,1,lexeme,отдыхать,отдыхать
+271,ru-271,1,lexeme,платить,платить
+272,ru-272,1,lexeme,заказать,заказать
+273,ru-273,1,lexeme,принести,принести
+274,ru-274,1,lexeme,попробовать,попробовать
+275,ru-275,1,lexeme,болеть,болеть
+276,ru-276,1,lexeme,звонить,звонить
+277,ru-277,1,frame,I want чай,я хочу чай
+278,ru-278,1,frame,I need чай,мне нужен чай
+279,ru-279,1,frame,Where is чай?,где чай?
+280,ru-280,1,frame,I want вода,я хочу вода
+281,ru-281,1,frame,I need вода,мне нужен вода
+282,ru-282,1,frame,Where is вода?,где вода?
+283,ru-283,1,frame,I want кофе,я хочу кофе
+284,ru-284,1,frame,I need кофе,мне нужен кофе
+285,ru-285,1,frame,Where is кофе?,где кофе?
+286,ru-286,1,frame,I want суп,я хочу суп
+287,ru-287,1,frame,I need суп,мне нужен суп
+288,ru-288,1,frame,Where is суп?,где суп?
+289,ru-289,1,frame,I want хлеб,я хочу хлеб
+290,ru-290,1,frame,I need хлеб,мне нужен хлеб
+291,ru-291,1,frame,Where is хлеб?,где хлеб?
+292,ru-292,1,frame,I want помощь,я хочу помощь
+293,ru-293,1,frame,I need помощь,мне нужен помощь
+294,ru-294,1,frame,Where is помощь?,где помощь?
+295,ru-295,1,frame,I want билет,я хочу билет
+296,ru-296,1,frame,I need билет,мне нужен билет
+297,ru-297,1,frame,Where is билет?,где билет?
+298,ru-298,1,frame,I want телефон,я хочу телефон
+299,ru-299,1,frame,I need телефон,мне нужен телефон
+300,ru-300,1,frame,Where is телефон?,где телефон?
+301,ru-301,2,frame,I want магазин,я хочу магазин
+302,ru-302,2,frame,I need магазин,мне нужен магазин
+303,ru-303,2,frame,Where is магазин?,где магазин?
+304,ru-304,2,frame,I want дом,я хочу дом
+305,ru-305,2,frame,I need дом,мне нужен дом
+306,ru-306,2,frame,Where is дом?,где дом?
+307,ru-307,2,frame,I want работа,я хочу работа
+308,ru-308,2,frame,I need работа,мне нужен работа
+309,ru-309,2,frame,Where is работа?,где работа?
+310,ru-310,2,frame,I want кафе,я хочу кафе
+311,ru-311,2,frame,I need кафе,мне нужен кафе
+312,ru-312,2,frame,Where is кафе?,где кафе?
+313,ru-313,2,frame,I want метро,я хочу метро
+314,ru-314,2,frame,I need метро,мне нужен метро
+315,ru-315,2,frame,Where is метро?,где метро?
+316,ru-316,2,frame,I want автобус,я хочу автобус
+317,ru-317,2,frame,I need автобус,мне нужен автобус
+318,ru-318,2,frame,Where is автобус?,где автобус?
+319,ru-319,2,frame,I want лекарство,я хочу лекарство
+320,ru-320,2,frame,I need лекарство,мне нужен лекарство
+321,ru-321,2,frame,Where is лекарство?,где лекарство?
+322,ru-322,2,frame,I want молоко,я хочу молоко
+323,ru-323,2,frame,I need молоко,мне нужен молоко
+324,ru-324,2,frame,Where is молоко?,где молоко?
+325,ru-325,2,frame,I want сыр,я хочу сыр
+326,ru-326,2,frame,I need сыр,мне нужен сыр
+327,ru-327,2,frame,Where is сыр?,где сыр?
+328,ru-328,2,frame,I want салат,я хочу салат
+329,ru-329,2,frame,I need салат,мне нужен салат
+330,ru-330,2,frame,Where is салат?,где салат?
+331,ru-331,2,frame,I want сахар,я хочу сахар
+332,ru-332,2,frame,I need сахар,мне нужен сахар
+333,ru-333,2,frame,Where is сахар?,где сахар?
+334,ru-334,2,frame,I want соль,я хочу соль
+335,ru-335,2,frame,I need соль,мне нужен соль
+336,ru-336,2,frame,Where is соль?,где соль?
+337,ru-337,2,frame,I want to помочь,я хочу помочь
+338,ru-338,2,frame,I can помочь,я могу помочь
+339,ru-339,2,frame,I need to помочь,мне нужно помочь
+340,ru-340,2,frame,I want to есть,я хочу есть
+341,ru-341,2,frame,I can есть,я могу есть
+342,ru-342,2,frame,I need to есть,мне нужно есть
+343,ru-343,2,frame,I want to пить,я хочу пить
+344,ru-344,2,frame,I can пить,я могу пить
+345,ru-345,2,frame,I need to пить,мне нужно пить
+346,ru-346,2,frame,I want to идти,я хочу идти
+347,ru-347,2,frame,I can идти,я могу идти
+348,ru-348,2,frame,I need to идти,мне нужно идти
+349,ru-349,2,frame,I want to ехать,я хочу ехать
+350,ru-350,2,frame,I can ехать,я могу ехать
+351,ru-351,2,frame,I need to ехать,мне нужно ехать
+352,ru-352,2,frame,I want to спать,я хочу спать
+353,ru-353,2,frame,I can спать,я могу спать
+354,ru-354,2,frame,I need to спать,мне нужно спать
+355,ru-355,2,frame,I want to работать,я хочу работать
+356,ru-356,2,frame,I can работать,я могу работать
+357,ru-357,2,frame,I need to работать,мне нужно работать
+358,ru-358,2,frame,I want to отдыхать,я хочу отдыхать
+359,ru-359,2,frame,I can отдыхать,я могу отдыхать
+360,ru-360,2,frame,I need to отдыхать,мне нужно отдыхать
+361,ru-361,2,frame,I want to позвонить,я хочу позвонить
+362,ru-362,2,frame,I can позвонить,я могу позвонить
+363,ru-363,2,frame,I need to позвонить,мне нужно позвонить
+364,ru-364,2,frame,I want to купить,я хочу купить
+365,ru-365,2,frame,I can купить,я могу купить
+366,ru-366,2,frame,I need to купить,мне нужно купить
+367,ru-367,2,frame,I want to готовить,я хочу готовить
+368,ru-368,2,frame,I can готовить,я могу готовить
+369,ru-369,2,frame,I need to готовить,мне нужно готовить
+370,ru-370,2,frame,I want to ждать,я хочу ждать
+371,ru-371,2,frame,I can ждать,я могу ждать
+372,ru-372,2,frame,I need to ждать,мне нужно ждать
+373,ru-373,2,frame,I want to сказать,я хочу сказать
+374,ru-374,2,frame,I can сказать,я могу сказать
+375,ru-375,2,frame,I need to сказать,мне нужно сказать
+376,ru-376,2,frame,I want to спросить,я хочу спросить
+377,ru-377,2,frame,I can спросить,я могу спросить
+378,ru-378,2,frame,I need to спросить,мне нужно спросить
+379,ru-379,2,frame,I want to посмотреть,я хочу посмотреть
+380,ru-380,2,frame,I can посмотреть,я могу посмотреть
+381,ru-381,2,frame,I need to посмотреть,мне нужно посмотреть
+382,ru-382,2,lexeme,дорога,дорога
+383,ru-383,2,lexeme,страна,страна
+384,ru-384,2,lexeme,мир,мир
+385,ru-385,2,lexeme,вещь,вещь
+386,ru-386,2,lexeme,имя,имя
+387,ru-387,2,lexeme,лицо,лицо
+388,ru-388,2,lexeme,голос,голос
+389,ru-389,2,lexeme,вода,вода
+390,ru-390,2,lexeme,земля,земля
+391,ru-391,2,lexeme,сторона,сторона
+392,ru-392,2,lexeme,школа,школа
+393,ru-393,2,lexeme,неделя,неделя
+394,ru-394,2,lexeme,месяц,месяц
+395,ru-395,2,lexeme,вечером,вечером
+396,ru-396,2,lexeme,утром,утром
+397,ru-397,2,lexeme,суббота,суббота
+398,ru-398,2,lexeme,воскресенье,воскресенье
+399,ru-399,2,lexeme,понедельник,понедельник
+400,ru-400,2,lexeme,вторник,вторник
+401,ru-401,2,lexeme,среда,среда
+402,ru-402,2,lexeme,четверг,четверг
+403,ru-403,2,lexeme,пятница,пятница
+404,ru-404,2,lexeme,семь,семь
+405,ru-405,2,lexeme,восемь,восемь
+406,ru-406,2,lexeme,девять,девять
+407,ru-407,2,lexeme,десять,десять
+408,ru-408,2,lexeme,сначала,сначала
+409,ru-409,2,lexeme,после,после
+410,ru-410,2,lexeme,перед,перед
+411,ru-411,2,lexeme,между,между
+412,ru-412,2,lexeme,около,около
+413,ru-413,2,lexeme,правда,правда
+414,ru-414,2,lexeme,конечно,конечно
+415,ru-415,2,lexeme,может,может
+416,ru-416,2,lexeme,нельзя,нельзя
+417,ru-417,2,lexeme,готов,готов
+418,ru-418,2,lexeme,понятно,понятно
+419,ru-419,2,lexeme,ясно,ясно
+420,ru-420,2,lexeme,интересно,интересно
+421,ru-421,2,lexeme,любимый,любимый
+422,ru-422,2,lexeme,сильный,сильный
+423,ru-423,2,lexeme,слабый,слабый
+424,ru-424,2,lexeme,лёгкий,лёгкий
+425,ru-425,2,lexeme,трудный,трудный
+426,ru-426,2,lexeme,дорогой,дорогой
+427,ru-427,2,lexeme,дешёвый,дешёвый
+428,ru-428,2,lexeme,чистый,чистый
+429,ru-429,2,lexeme,грязный,грязный
+430,ru-430,2,lexeme,светлый,светлый
+431,ru-431,2,lexeme,тёмный,тёмный
+432,ru-432,2,lexeme,сладкий,сладкий
+433,ru-433,2,lexeme,кислый,кислый
+434,ru-434,2,lexeme,острый,острый
+435,ru-435,2,lexeme,сухой,сухой
+436,ru-436,2,lexeme,мокрый,мокрый
+437,ru-437,2,lexeme,полный,полный
+438,ru-438,2,lexeme,пустой,пустой
+439,ru-439,2,lexeme,отец,отец
+440,ru-440,2,lexeme,мать,мать
+441,ru-441,2,lexeme,мальчик,мальчик
+442,ru-442,2,lexeme,девочка,девочка
+443,ru-443,2,lexeme,сосед,сосед
+444,ru-444,2,lexeme,подруга,подруга
+445,ru-445,2,lexeme,семейный,семейный
+446,ru-446,2,lexeme,ключ,ключ
+447,ru-447,2,lexeme,сумка,сумка
+448,ru-448,2,lexeme,одежда,одежда
+449,ru-449,2,lexeme,обувь,обувь
+450,ru-450,2,lexeme,пальто,пальто
+451,ru-451,2,lexeme,рубашка,рубашка
+452,ru-452,2,lexeme,чашка,чашка
+453,ru-453,2,lexeme,бутылка,бутылка
+454,ru-454,2,lexeme,холодильник,холодильник
+455,ru-455,2,lexeme,плита,плита
+456,ru-456,2,lexeme,душ,душ
+457,ru-457,2,lexeme,пол,пол
+458,ru-458,2,lexeme,стена,стена
+459,ru-459,2,lexeme,лампа,лампа
+460,ru-460,2,lexeme,интернет,интернет
+461,ru-461,2,lexeme,адрес,адрес
+462,ru-462,2,lexeme,карта,карта
+463,ru-463,2,lexeme,паспорт,паспорт
+464,ru-464,2,lexeme,багаж,багаж
+465,ru-465,2,lexeme,остановка,остановка
+466,ru-466,2,lexeme,такси,такси
+467,ru-467,2,lexeme,самолёт,самолёт
+468,ru-468,2,lexeme,граница,граница
+469,ru-469,2,lexeme,отель,отель
+470,ru-470,2,lexeme,номер,номер
+471,ru-471,2,lexeme,музей,музей
+472,ru-472,2,lexeme,река,река
+473,ru-473,2,lexeme,море,море
+474,ru-474,2,lexeme,лес,лес
+475,ru-475,2,lexeme,погода,погода
+476,ru-476,2,lexeme,дождь,дождь
+477,ru-477,2,lexeme,снег,снег
+478,ru-478,2,lexeme,солнце,солнце
+479,ru-479,2,lexeme,ветер,ветер
+480,ru-480,2,lexeme,тепло,тепло
+481,ru-481,2,lexeme,холодно,холодно
+482,ru-482,2,phrase,хороший день,хороший день
+483,ru-483,2,phrase,хороший дом,хороший дом
+484,ru-484,2,phrase,хороший чай,хороший чай
+485,ru-485,2,phrase,хороший суп,хороший суп
+486,ru-486,2,phrase,хороший город,хороший город
+487,ru-487,2,phrase,хороший вопрос,хороший вопрос
+488,ru-488,2,phrase,хороший ответ,хороший ответ
+489,ru-489,2,phrase,хороший план,хороший план
+490,ru-490,2,phrase,хороший вечер,хороший вечер
+491,ru-491,2,phrase,хороший человек,хороший человек
+492,ru-492,2,phrase,хороший магазин,хороший магазин
+493,ru-493,2,phrase,хороший стол,хороший стол
+494,ru-494,2,phrase,хороший телефон,хороший телефон
+495,ru-495,2,phrase,хороший билет,хороший билет
+496,ru-496,2,phrase,хороший номер,хороший номер
+497,ru-497,2,phrase,плохой день,плохой день
+498,ru-498,2,phrase,плохой дом,плохой дом
+499,ru-499,2,phrase,плохой чай,плохой чай
+500,ru-500,2,phrase,плохой суп,плохой суп
