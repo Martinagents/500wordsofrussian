@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "dev": "node scripts/build.mjs && python3 -m http.server 5173 -d dist",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "test": "node tests/run-tests.mjs",
+    "validate:curriculum": "python3 curriculum/scripts/validate_deck.py",
+    "generate:curriculum": "python3 curriculum/scripts/generate_deck.py"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest",
+    "vite-plugin-pwa": "latest",
+    "idb": "latest",
+    "ts-fsrs": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}

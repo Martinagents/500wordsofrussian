@@ -1,0 +1,2 @@
+declare module '*.json'{const v:any;export default v}declare module 'react'{export function useEffect(a:any,b?:any):void;export function useMemo(a:any,b?:any):any;export function useState<T>(a:T|(()=>T)):[T,(v:T|((x:T)=>T))=>void];const React:any;export default React}declare module 'react-dom/client'{export function createRoot(el:any):{render(x:any):void}}declare namespace JSX{interface IntrinsicElements{[k:string]:any}}
+declare module '*.css';
