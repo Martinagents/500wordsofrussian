@@ -1,0 +1,520 @@
+rank,form,source
+1,здравствуйте,editorial+frequency
+2,привет,editorial+frequency
+3,до свидания,editorial+frequency
+4,спасибо,editorial+frequency
+5,пожалуйста,editorial+frequency
+6,да,editorial+frequency
+7,нет,editorial+frequency
+8,я,editorial+frequency
+9,ты,editorial+frequency
+10,вы,editorial+frequency
+11,он,editorial+frequency
+12,она,editorial+frequency
+13,мы,editorial+frequency
+14,они,editorial+frequency
+15,это,editorial+frequency
+16,что,editorial+frequency
+17,кто,editorial+frequency
+18,где,editorial+frequency
+19,когда,editorial+frequency
+20,как,editorial+frequency
+21,почему,editorial+frequency
+22,какой,editorial+frequency
+23,мой,editorial+frequency
+24,ваш,editorial+frequency
+25,хорошо,editorial+frequency
+26,плохо,editorial+frequency
+27,большой,editorial+frequency
+28,маленький,editorial+frequency
+29,сейчас,editorial+frequency
+30,сегодня,editorial+frequency
+31,завтра,editorial+frequency
+32,вчера,editorial+frequency
+33,потом,editorial+frequency
+34,здесь,editorial+frequency
+35,там,editorial+frequency
+36,дом,editorial+frequency
+37,семья,editorial+frequency
+38,мама,editorial+frequency
+39,папа,editorial+frequency
+40,дочь,editorial+frequency
+41,сын,editorial+frequency
+42,девушка,editorial+frequency
+43,еда,editorial+frequency
+44,вода,editorial+frequency
+45,чай,editorial+frequency
+46,кофе,editorial+frequency
+47,хлеб,editorial+frequency
+48,суп,editorial+frequency
+49,мясо,editorial+frequency
+50,рыба,editorial+frequency
+51,овощ,editorial+frequency
+52,картошка,editorial+frequency
+53,соль,editorial+frequency
+54,сахар,editorial+frequency
+55,кухня,editorial+frequency
+56,комната,editorial+frequency
+57,стол,editorial+frequency
+58,стул,editorial+frequency
+59,кровать,editorial+frequency
+60,туалет,editorial+frequency
+61,магазин,editorial+frequency
+62,улица,editorial+frequency
+63,налево,editorial+frequency
+64,направо,editorial+frequency
+65,прямо,editorial+frequency
+66,рядом,editorial+frequency
+67,далеко,editorial+frequency
+68,Берлин,editorial+frequency
+69,Россия,editorial+frequency
+70,Болгария,editorial+frequency
+71,работа,editorial+frequency
+72,день,editorial+frequency
+73,утро,editorial+frequency
+74,вечер,editorial+frequency
+75,ночь,editorial+frequency
+76,минута,editorial+frequency
+77,час,editorial+frequency
+78,один,editorial+frequency
+79,два,editorial+frequency
+80,три,editorial+frequency
+81,много,editorial+frequency
+82,мало,editorial+frequency
+83,ещё,editorial+frequency
+84,очень,editorial+frequency
+85,тоже,editorial+frequency
+86,и,editorial+frequency
+87,или,editorial+frequency
+88,но,editorial+frequency
+89,потому что,editorial+frequency
+90,с,editorial+frequency
+91,без,editorial+frequency
+92,для,editorial+frequency
+93,в,editorial+frequency
+94,к,editorial+frequency
+95,я хочу,editorial+frequency
+96,я могу,editorial+frequency
+97,можно,editorial+frequency
+98,мне нужно,editorial+frequency
+99,надо,editorial+frequency
+100,я знаю,editorial+frequency
+101,я понимаю,editorial+frequency
+102,я думаю,editorial+frequency
+103,я говорю,editorial+frequency
+104,сказать,editorial+frequency
+105,спросить,editorial+frequency
+106,повторить,editorial+frequency
+107,я вижу,editorial+frequency
+108,я слышу,editorial+frequency
+109,смотреть,editorial+frequency
+110,делать,editorial+frequency
+111,дать,editorial+frequency
+112,взять,editorial+frequency
+113,помочь,editorial+frequency
+114,ждать,editorial+frequency
+115,идти,editorial+frequency
+116,ехать,editorial+frequency
+117,прийти,editorial+frequency
+118,есть,editorial+frequency
+119,пить,editorial+frequency
+120,жить,editorial+frequency
+121,работать,editorial+frequency
+122,спать,editorial+frequency
+123,любить,editorial+frequency
+124,мне нравится,editorial+frequency
+125,у меня есть,editorial+frequency
+126,мне плохо,editorial+frequency
+127,я не хочу,editorial+frequency
+128,я не могу,editorial+frequency
+129,я не знаю,editorial+frequency
+130,я не понимаю,editorial+frequency
+131,повторите, пожалуйста,editorial+frequency
+132,говорите медленнее, пожалуйста,editorial+frequency
+133,что это значит?,editorial+frequency
+134,где туалет?,editorial+frequency
+135,у вас есть чай?,editorial+frequency
+136,я могу помочь?,editorial+frequency
+137,вам нужна помощь?,editorial+frequency
+138,я хочу есть,editorial+frequency
+139,я хочу пить,editorial+frequency
+140,я устал,editorial+frequency
+141,это вкусно,editorial+frequency
+142,не сейчас,editorial+frequency
+143,может быть, потом,editorial+frequency
+144,очень приятно,editorial+frequency
+145,меня зовут ...,editorial+frequency
+146,я из Болгарии,editorial+frequency
+147,я живу в Берлине,editorial+frequency
+148,я учу русский,editorial+frequency
+149,я говорю по-болгарски,editorial+frequency
+150,я немного говорю по-русски,editorial+frequency
+151,как дела?,editorial+frequency
+152,всё хорошо,editorial+frequency
+153,извините,editorial+frequency
+154,простите,editorial+frequency
+155,доброе утро,editorial+frequency
+156,добрый вечер,editorial+frequency
+157,человек,editorial+frequency
+158,время,editorial+frequency
+159,год,editorial+frequency
+160,раз,editorial+frequency
+161,дело,editorial+frequency
+162,рука,editorial+frequency
+163,глаз,editorial+frequency
+164,место,editorial+frequency
+165,жизнь,editorial+frequency
+166,слово,editorial+frequency
+167,друг,editorial+frequency
+168,город,editorial+frequency
+169,машина,editorial+frequency
+170,дверь,editorial+frequency
+171,окно,editorial+frequency
+172,телефон,editorial+frequency
+173,деньги,editorial+frequency
+174,билет,editorial+frequency
+175,поезд,editorial+frequency
+176,автобус,editorial+frequency
+177,метро,editorial+frequency
+178,аэропорт,editorial+frequency
+179,вокзал,editorial+frequency
+180,ресторан,editorial+frequency
+181,кафе,editorial+frequency
+182,молоко,editorial+frequency
+183,сыр,editorial+frequency
+184,яйцо,editorial+frequency
+185,курица,editorial+frequency
+186,рис,editorial+frequency
+187,салат,editorial+frequency
+188,яблоко,editorial+frequency
+189,нож,editorial+frequency
+190,вилка,editorial+frequency
+191,ложка,editorial+frequency
+192,тарелка,editorial+frequency
+193,стакан,editorial+frequency
+194,горячий,editorial+frequency
+195,холодный,editorial+frequency
+196,новый,editorial+frequency
+197,старый,editorial+frequency
+198,красивый,editorial+frequency
+199,русский,editorial+frequency
+200,английский,editorial+frequency
+201,болгарский,editorial+frequency
+202,важный,editorial+frequency
+203,нормально,editorial+frequency
+204,быстро,editorial+frequency
+205,медленно,editorial+frequency
+206,вместе,editorial+frequency
+207,один,editorial+frequency
+208,два,editorial+frequency
+209,три,editorial+frequency
+210,четыре,editorial+frequency
+211,пять,editorial+frequency
+212,первый,editorial+frequency
+213,последний,editorial+frequency
+214,каждый,editorial+frequency
+215,всегда,editorial+frequency
+216,иногда,editorial+frequency
+217,никогда,editorial+frequency
+218,уже,editorial+frequency
+219,ещё,editorial+frequency
+220,рано,editorial+frequency
+221,поздно,editorial+frequency
+222,здесь,editorial+frequency
+223,туда,editorial+frequency
+224,сюда,editorial+frequency
+225,назад,editorial+frequency
+226,вперёд,editorial+frequency
+227,центр,editorial+frequency
+228,парк,editorial+frequency
+229,аптека,editorial+frequency
+230,врач,editorial+frequency
+231,температура,editorial+frequency
+232,голова,editorial+frequency
+233,живот,editorial+frequency
+234,больно,editorial+frequency
+235,помощь,editorial+frequency
+236,вопрос,editorial+frequency
+237,ответ,editorial+frequency
+238,план,editorial+frequency
+239,встреча,editorial+frequency
+240,муж,editorial+frequency
+241,жена,editorial+frequency
+242,брат,editorial+frequency
+243,сестра,editorial+frequency
+244,бабушка,editorial+frequency
+245,дедушка,editorial+frequency
+246,ребёнок,editorial+frequency
+247,родители,editorial+frequency
+248,гость,editorial+frequency
+249,подарок,editorial+frequency
+250,праздник,editorial+frequency
+251,убирать,editorial+frequency
+252,готовить,editorial+frequency
+253,купить,editorial+frequency
+254,найти,editorial+frequency
+255,показать,editorial+frequency
+256,открыть,editorial+frequency
+257,закрыть,editorial+frequency
+258,позвонить,editorial+frequency
+259,писать,editorial+frequency
+260,читать,editorial+frequency
+261,учить,editorial+frequency
+262,помнить,editorial+frequency
+263,забыть,editorial+frequency
+264,начать,editorial+frequency
+265,кончить,editorial+frequency
+266,сидеть,editorial+frequency
+267,стоять,editorial+frequency
+268,лежать,editorial+frequency
+269,гулять,editorial+frequency
+270,отдыхать,editorial+frequency
+271,платить,editorial+frequency
+272,заказать,editorial+frequency
+273,принести,editorial+frequency
+274,попробовать,editorial+frequency
+275,болеть,editorial+frequency
+276,звонить,editorial+frequency
+277,я хочу чай,editorial+frequency
+278,мне нужен чай,editorial+frequency
+279,где чай?,editorial+frequency
+280,я хочу вода,editorial+frequency
+281,мне нужен вода,editorial+frequency
+282,где вода?,editorial+frequency
+283,я хочу кофе,editorial+frequency
+284,мне нужен кофе,editorial+frequency
+285,где кофе?,editorial+frequency
+286,я хочу суп,editorial+frequency
+287,мне нужен суп,editorial+frequency
+288,где суп?,editorial+frequency
+289,я хочу хлеб,editorial+frequency
+290,мне нужен хлеб,editorial+frequency
+291,где хлеб?,editorial+frequency
+292,я хочу помощь,editorial+frequency
+293,мне нужен помощь,editorial+frequency
+294,где помощь?,editorial+frequency
+295,я хочу билет,editorial+frequency
+296,мне нужен билет,editorial+frequency
+297,где билет?,editorial+frequency
+298,я хочу телефон,editorial+frequency
+299,мне нужен телефон,editorial+frequency
+300,где телефон?,editorial+frequency
+301,я хочу магазин,editorial+frequency
+302,мне нужен магазин,editorial+frequency
+303,где магазин?,editorial+frequency
+304,я хочу дом,editorial+frequency
+305,мне нужен дом,editorial+frequency
+306,где дом?,editorial+frequency
+307,я хочу работа,editorial+frequency
+308,мне нужен работа,editorial+frequency
+309,где работа?,editorial+frequency
+310,я хочу кафе,editorial+frequency
+311,мне нужен кафе,editorial+frequency
+312,где кафе?,editorial+frequency
+313,я хочу метро,editorial+frequency
+314,мне нужен метро,editorial+frequency
+315,где метро?,editorial+frequency
+316,я хочу автобус,editorial+frequency
+317,мне нужен автобус,editorial+frequency
+318,где автобус?,editorial+frequency
+319,я хочу лекарство,editorial+frequency
+320,мне нужен лекарство,editorial+frequency
+321,где лекарство?,editorial+frequency
+322,я хочу молоко,editorial+frequency
+323,мне нужен молоко,editorial+frequency
+324,где молоко?,editorial+frequency
+325,я хочу сыр,editorial+frequency
+326,мне нужен сыр,editorial+frequency
+327,где сыр?,editorial+frequency
+328,я хочу салат,editorial+frequency
+329,мне нужен салат,editorial+frequency
+330,где салат?,editorial+frequency
+331,я хочу сахар,editorial+frequency
+332,мне нужен сахар,editorial+frequency
+333,где сахар?,editorial+frequency
+334,я хочу соль,editorial+frequency
+335,мне нужен соль,editorial+frequency
+336,где соль?,editorial+frequency
+337,я хочу помочь,editorial+frequency
+338,я могу помочь,editorial+frequency
+339,мне нужно помочь,editorial+frequency
+340,я хочу есть,editorial+frequency
+341,я могу есть,editorial+frequency
+342,мне нужно есть,editorial+frequency
+343,я хочу пить,editorial+frequency
+344,я могу пить,editorial+frequency
+345,мне нужно пить,editorial+frequency
+346,я хочу идти,editorial+frequency
+347,я могу идти,editorial+frequency
+348,мне нужно идти,editorial+frequency
+349,я хочу ехать,editorial+frequency
+350,я могу ехать,editorial+frequency
+351,мне нужно ехать,editorial+frequency
+352,я хочу спать,editorial+frequency
+353,я могу спать,editorial+frequency
+354,мне нужно спать,editorial+frequency
+355,я хочу работать,editorial+frequency
+356,я могу работать,editorial+frequency
+357,мне нужно работать,editorial+frequency
+358,я хочу отдыхать,editorial+frequency
+359,я могу отдыхать,editorial+frequency
+360,мне нужно отдыхать,editorial+frequency
+361,я хочу позвонить,editorial+frequency
+362,я могу позвонить,editorial+frequency
+363,мне нужно позвонить,editorial+frequency
+364,я хочу купить,editorial+frequency
+365,я могу купить,editorial+frequency
+366,мне нужно купить,editorial+frequency
+367,я хочу готовить,editorial+frequency
+368,я могу готовить,editorial+frequency
+369,мне нужно готовить,editorial+frequency
+370,я хочу ждать,editorial+frequency
+371,я могу ждать,editorial+frequency
+372,мне нужно ждать,editorial+frequency
+373,я хочу сказать,editorial+frequency
+374,я могу сказать,editorial+frequency
+375,мне нужно сказать,editorial+frequency
+376,я хочу спросить,editorial+frequency
+377,я могу спросить,editorial+frequency
+378,мне нужно спросить,editorial+frequency
+379,я хочу посмотреть,editorial+frequency
+380,я могу посмотреть,editorial+frequency
+381,мне нужно посмотреть,editorial+frequency
+382,дорога,editorial+frequency
+383,страна,editorial+frequency
+384,мир,editorial+frequency
+385,вещь,editorial+frequency
+386,имя,editorial+frequency
+387,лицо,editorial+frequency
+388,голос,editorial+frequency
+389,вода,editorial+frequency
+390,земля,editorial+frequency
+391,сторона,editorial+frequency
+392,школа,editorial+frequency
+393,неделя,editorial+frequency
+394,месяц,editorial+frequency
+395,вечером,editorial+frequency
+396,утром,editorial+frequency
+397,суббота,editorial+frequency
+398,воскресенье,editorial+frequency
+399,понедельник,editorial+frequency
+400,вторник,editorial+frequency
+401,среда,editorial+frequency
+402,четверг,editorial+frequency
+403,пятница,editorial+frequency
+404,семь,editorial+frequency
+405,восемь,editorial+frequency
+406,девять,editorial+frequency
+407,десять,editorial+frequency
+408,сначала,editorial+frequency
+409,после,editorial+frequency
+410,перед,editorial+frequency
+411,между,editorial+frequency
+412,около,editorial+frequency
+413,правда,editorial+frequency
+414,конечно,editorial+frequency
+415,может,editorial+frequency
+416,нельзя,editorial+frequency
+417,готов,editorial+frequency
+418,понятно,editorial+frequency
+419,ясно,editorial+frequency
+420,интересно,editorial+frequency
+421,любимый,editorial+frequency
+422,сильный,editorial+frequency
+423,слабый,editorial+frequency
+424,лёгкий,editorial+frequency
+425,трудный,editorial+frequency
+426,дорогой,editorial+frequency
+427,дешёвый,editorial+frequency
+428,чистый,editorial+frequency
+429,грязный,editorial+frequency
+430,светлый,editorial+frequency
+431,тёмный,editorial+frequency
+432,сладкий,editorial+frequency
+433,кислый,editorial+frequency
+434,острый,editorial+frequency
+435,сухой,editorial+frequency
+436,мокрый,editorial+frequency
+437,полный,editorial+frequency
+438,пустой,editorial+frequency
+439,отец,editorial+frequency
+440,мать,editorial+frequency
+441,мальчик,editorial+frequency
+442,девочка,editorial+frequency
+443,сосед,editorial+frequency
+444,подруга,editorial+frequency
+445,семейный,editorial+frequency
+446,ключ,editorial+frequency
+447,сумка,editorial+frequency
+448,одежда,editorial+frequency
+449,обувь,editorial+frequency
+450,пальто,editorial+frequency
+451,рубашка,editorial+frequency
+452,чашка,editorial+frequency
+453,бутылка,editorial+frequency
+454,холодильник,editorial+frequency
+455,плита,editorial+frequency
+456,душ,editorial+frequency
+457,пол,editorial+frequency
+458,стена,editorial+frequency
+459,лампа,editorial+frequency
+460,интернет,editorial+frequency
+461,адрес,editorial+frequency
+462,карта,editorial+frequency
+463,паспорт,editorial+frequency
+464,багаж,editorial+frequency
+465,остановка,editorial+frequency
+466,такси,editorial+frequency
+467,самолёт,editorial+frequency
+468,граница,editorial+frequency
+469,отель,editorial+frequency
+470,номер,editorial+frequency
+471,музей,editorial+frequency
+472,река,editorial+frequency
+473,море,editorial+frequency
+474,лес,editorial+frequency
+475,погода,editorial+frequency
+476,дождь,editorial+frequency
+477,снег,editorial+frequency
+478,солнце,editorial+frequency
+479,ветер,editorial+frequency
+480,тепло,editorial+frequency
+481,холодно,editorial+frequency
+482,хороший день,editorial+frequency
+483,хороший дом,editorial+frequency
+484,хороший чай,editorial+frequency
+485,хороший суп,editorial+frequency
+486,хороший город,editorial+frequency
+487,хороший вопрос,editorial+frequency
+488,хороший ответ,editorial+frequency
+489,хороший план,editorial+frequency
+490,хороший вечер,editorial+frequency
+491,хороший человек,editorial+frequency
+492,хороший магазин,editorial+frequency
+493,хороший стол,editorial+frequency
+494,хороший телефон,editorial+frequency
+495,хороший билет,editorial+frequency
+496,хороший номер,editorial+frequency
+497,плохой день,editorial+frequency
+498,плохой дом,editorial+frequency
+499,плохой чай,editorial+frequency
+500,плохой суп,editorial+frequency
+501,плохой город,editorial+frequency
+502,плохой вопрос,editorial+frequency
+503,плохой ответ,editorial+frequency
+504,плохой план,editorial+frequency
+505,плохой вечер,editorial+frequency
+506,плохой человек,editorial+frequency
+507,плохой магазин,editorial+frequency
+508,плохой стол,editorial+frequency
+509,плохой телефон,editorial+frequency
+510,плохой билет,editorial+frequency
+511,плохой номер,editorial+frequency
+512,новый день,editorial+frequency
+513,новый дом,editorial+frequency
+514,новый чай,editorial+frequency
+515,новый суп,editorial+frequency
+516,новый город,editorial+frequency
+517,новый вопрос,editorial+frequency
+518,новый ответ,editorial+frequency
+519,новый план,editorial+frequency
