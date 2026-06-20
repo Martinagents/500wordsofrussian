@@ -21,3 +21,7 @@ The script stores visible components close to `0.40 frequency + 0.20 corpus agre
 - `curriculum/generated/candidates.csv`
 - `curriculum/generated/deck-report.md`
 - `curriculum/generated/deck-report.csv`
+
+## Deck repair revision
+
+`curriculum/scripts/repair_deck.py` is an explicit editorial repair layer added after user testing. It fixes Russian-text-as-English glosses, replaces the repetitive `I want/I need/Where is <noun>` block with distinct conversational phrases, and intentionally preserves stable IDs so existing PWA progress can migrate.

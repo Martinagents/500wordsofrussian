@@ -5,7 +5,7 @@ def ck(x,m):
 ck(len(items)==500,'must have 500 items');ck(sum(i['tier']==1 for i in items)==300,'tier1 300');ck(sum(i['tier']==2 for i in items)==200,'tier2 200');ck(len({i['id'] for i in items})==500,'unique ids');ck(len({i['rank'] for i in items})==500,'unique ranks');ck(min(i['rank'] for i in items)==1 and max(i['rank'] for i in items)==500,'rank range')
 pairs=set();cards=set();valid={'production','listening','reading'};sources=set(D['sources'])
 for i in items:
- ck(i['english'] and i['russian'],'empty fields');ck(i['enabledCardTypes'],'cards');ck(set(i['enabledCardTypes'])<=valid,'bad card type');ck(not re.fullmatch(r'\d+',i['id']),'array id');ck(set(i['provenance']['sources'])<=sources,'source unresolved');ck('finalScore'in i['provenance'],'score');p=(i['english'],i['russian']);ck(p not in pairs,'duplicate pair');pairs.add(p)
+ ck(i['english'] and i['russian'],'empty fields');ck(i['english']!=i['russian'],'english repeats russian');ck(i['enabledCardTypes'],'cards');ck(set(i['enabledCardTypes'])<=valid,'bad card type');ck(not re.fullmatch(r'\d+',i['id']),'array id');ck(set(i['provenance']['sources'])<=sources,'source unresolved');ck('finalScore'in i['provenance'],'score');ck(not re.search('[А-Яа-яЁё]', i['english']),'cyrillic in English prompt');p=(i['english'],i['russian']);ck(p not in pairs,'duplicate pair');pairs.add(p)
  for t in i['enabledCardTypes']: cid=i['id']+':'+t;ck(cid not in cards,'dup card');cards.add(cid)
 for cat in ['greetings','family','food','drink','home','time','movement','Berlin','travel','politeness','clarification','work']:
  ck(any(cat in i['semanticCategories'] or cat in i['tags'] for i in items),f'missing {cat}')

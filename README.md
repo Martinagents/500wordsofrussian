@@ -35,6 +35,11 @@ Open the Pages URL in Safari, wait for the “ready for offline use” message, 
 
 Data/settings offers Export Progress (JSON), Import Progress, and Reset Progress. Imports validate schema before merging matching stable card IDs; removed IDs are ignored by the runtime.
 
+
+## Update behavior
+
+The June 2026 deck repair keeps the same schema and stable card IDs where possible, so an installed PWA can receive better English prompts and less repetitive phrase content without wiping progress. New queue selection shuffles unseen cards deterministically by day and avoids adjacent cards from the same item.
+
 ## Limitations
 
 No backend, accounts, notifications, speech recognition, native-speaker certification, or generated MP3 audio. The curriculum is source-grounded and reproducible but should receive further native review.

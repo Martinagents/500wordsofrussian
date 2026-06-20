@@ -54,3 +54,7 @@ with open('curriculum/generated/deck-report.csv','w',newline='',encoding='utf-8'
 Path('curriculum/generated/candidates.csv').write_text('rank,form,source\n'+'\n'.join(f'{i},{x[1]},editorial+frequency' for i,x in enumerate(out,1)),encoding='utf-8')
 Path('curriculum/generated/deck-report.md').write_text('# Deck report\n\n500 items generated; Tier 1 ends at rank 300. Sources: wordfreq candidate retrieval script target, Russian National Corpus frequency dictionary metadata, published elementary lexical minimum derived source file, editorial communicative layer. Known limitation: linguistic review is careful editorial review, not native-speaker certified.\n\n## Items\n'+'\n'.join(f"{x['rank']}. T{x['tier']} {x['type']} — {x['english']} → {x['russian']}" for x in final),encoding='utf-8')
 print('generated',len(final))
+
+# Apply checked editorial repair layer that fixes English glosses and repetitive frame templates.
+import subprocess, sys as _sys
+subprocess.run([_sys.executable, 'curriculum/scripts/repair_deck.py'], check=True)

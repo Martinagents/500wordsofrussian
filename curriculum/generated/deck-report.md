@@ -1,6 +1,6 @@
 # Deck report
 
-500 items generated; Tier 1 ends at rank 300. Sources: wordfreq candidate retrieval script target, Russian National Corpus frequency dictionary metadata, published elementary lexical minimum derived source file, editorial communicative layer. Known limitation: linguistic review is careful editorial review, not native-speaker certified.
+500 items generated; Tier 1 ends at rank 300. This revision fixes same-language English glosses and replaces the repetitive generated noun-template block with distinct conversational phrases while preserving stable IDs for installed PWA progress.
 
 ## Items
 1. T1 phrase — hello → здравствуйте
@@ -159,347 +159,347 @@
 154. T1 frame — Sorry → простите
 155. T1 frame — Good morning → доброе утро
 156. T1 frame — Good evening → добрый вечер
-157. T1 lexeme — человек → человек
-158. T1 lexeme — время → время
-159. T1 lexeme — год → год
-160. T1 lexeme — раз → раз
-161. T1 lexeme — дело → дело
-162. T1 lexeme — рука → рука
-163. T1 lexeme — глаз → глаз
-164. T1 lexeme — место → место
-165. T1 lexeme — жизнь → жизнь
-166. T1 lexeme — слово → слово
-167. T1 lexeme — друг → друг
-168. T1 lexeme — город → город
-169. T1 lexeme — машина → машина
-170. T1 lexeme — дверь → дверь
-171. T1 lexeme — окно → окно
-172. T1 lexeme — телефон → телефон
-173. T1 lexeme — деньги → деньги
-174. T1 lexeme — билет → билет
-175. T1 lexeme — поезд → поезд
-176. T1 lexeme — автобус → автобус
-177. T1 lexeme — метро → метро
-178. T1 lexeme — аэропорт → аэропорт
-179. T1 lexeme — вокзал → вокзал
-180. T1 lexeme — ресторан → ресторан
-181. T1 lexeme — кафе → кафе
-182. T1 lexeme — молоко → молоко
-183. T1 lexeme — сыр → сыр
-184. T1 lexeme — яйцо → яйцо
-185. T1 lexeme — курица → курица
-186. T1 lexeme — рис → рис
-187. T1 lexeme — салат → салат
-188. T1 lexeme — яблоко → яблоко
-189. T1 lexeme — нож → нож
-190. T1 lexeme — вилка → вилка
-191. T1 lexeme — ложка → ложка
-192. T1 lexeme — тарелка → тарелка
-193. T1 lexeme — стакан → стакан
-194. T1 lexeme — горячий → горячий
-195. T1 lexeme — холодный → холодный
-196. T1 lexeme — новый → новый
-197. T1 lexeme — старый → старый
-198. T1 lexeme — красивый → красивый
-199. T1 lexeme — русский → русский
-200. T1 lexeme — английский → английский
-201. T1 lexeme — болгарский → болгарский
-202. T1 lexeme — важный → важный
-203. T1 lexeme — нормально → нормально
-204. T1 lexeme — быстро → быстро
-205. T1 lexeme — медленно → медленно
-206. T1 lexeme — вместе → вместе
-207. T1 lexeme — один → один
-208. T1 lexeme — два → два
-209. T1 lexeme — три → три
-210. T1 lexeme — четыре → четыре
-211. T1 lexeme — пять → пять
-212. T1 lexeme — первый → первый
-213. T1 lexeme — последний → последний
-214. T1 lexeme — каждый → каждый
-215. T1 lexeme — всегда → всегда
-216. T1 lexeme — иногда → иногда
-217. T1 lexeme — никогда → никогда
-218. T1 lexeme — уже → уже
-219. T1 lexeme — ещё → ещё
-220. T1 lexeme — рано → рано
-221. T1 lexeme — поздно → поздно
-222. T1 lexeme — здесь → здесь
-223. T1 lexeme — туда → туда
-224. T1 lexeme — сюда → сюда
-225. T1 lexeme — назад → назад
-226. T1 lexeme — вперёд → вперёд
-227. T1 lexeme — центр → центр
-228. T1 lexeme — парк → парк
-229. T1 lexeme — аптека → аптека
-230. T1 lexeme — врач → врач
-231. T1 lexeme — температура → температура
-232. T1 lexeme — голова → голова
-233. T1 lexeme — живот → живот
-234. T1 lexeme — больно → больно
-235. T1 lexeme — помощь → помощь
-236. T1 lexeme — вопрос → вопрос
-237. T1 lexeme — ответ → ответ
-238. T1 lexeme — план → план
-239. T1 lexeme — встреча → встреча
-240. T1 lexeme — муж → муж
-241. T1 lexeme — жена → жена
-242. T1 lexeme — брат → брат
-243. T1 lexeme — сестра → сестра
-244. T1 lexeme — бабушка → бабушка
-245. T1 lexeme — дедушка → дедушка
-246. T1 lexeme — ребёнок → ребёнок
-247. T1 lexeme — родители → родители
-248. T1 lexeme — гость → гость
-249. T1 lexeme — подарок → подарок
-250. T1 lexeme — праздник → праздник
-251. T1 lexeme — убирать → убирать
-252. T1 lexeme — готовить → готовить
-253. T1 lexeme — купить → купить
-254. T1 lexeme — найти → найти
-255. T1 lexeme — показать → показать
-256. T1 lexeme — открыть → открыть
-257. T1 lexeme — закрыть → закрыть
-258. T1 lexeme — позвонить → позвонить
-259. T1 lexeme — писать → писать
-260. T1 lexeme — читать → читать
-261. T1 lexeme — учить → учить
-262. T1 lexeme — помнить → помнить
-263. T1 lexeme — забыть → забыть
-264. T1 lexeme — начать → начать
-265. T1 lexeme — кончить → кончить
-266. T1 lexeme — сидеть → сидеть
-267. T1 lexeme — стоять → стоять
-268. T1 lexeme — лежать → лежать
-269. T1 lexeme — гулять → гулять
-270. T1 lexeme — отдыхать → отдыхать
-271. T1 lexeme — платить → платить
-272. T1 lexeme — заказать → заказать
-273. T1 lexeme — принести → принести
-274. T1 lexeme — попробовать → попробовать
-275. T1 lexeme — болеть → болеть
-276. T1 lexeme — звонить → звонить
-277. T1 frame — I want чай → я хочу чай
-278. T1 frame — I need чай → мне нужен чай
-279. T1 frame — Where is чай? → где чай?
-280. T1 frame — I want вода → я хочу вода
-281. T1 frame — I need вода → мне нужен вода
-282. T1 frame — Where is вода? → где вода?
-283. T1 frame — I want кофе → я хочу кофе
-284. T1 frame — I need кофе → мне нужен кофе
-285. T1 frame — Where is кофе? → где кофе?
-286. T1 frame — I want суп → я хочу суп
-287. T1 frame — I need суп → мне нужен суп
-288. T1 frame — Where is суп? → где суп?
-289. T1 frame — I want хлеб → я хочу хлеб
-290. T1 frame — I need хлеб → мне нужен хлеб
-291. T1 frame — Where is хлеб? → где хлеб?
-292. T1 frame — I want помощь → я хочу помощь
-293. T1 frame — I need помощь → мне нужен помощь
-294. T1 frame — Where is помощь? → где помощь?
-295. T1 frame — I want билет → я хочу билет
-296. T1 frame — I need билет → мне нужен билет
-297. T1 frame — Where is билет? → где билет?
-298. T1 frame — I want телефон → я хочу телефон
-299. T1 frame — I need телефон → мне нужен телефон
-300. T1 frame — Where is телефон? → где телефон?
-301. T2 frame — I want магазин → я хочу магазин
-302. T2 frame — I need магазин → мне нужен магазин
-303. T2 frame — Where is магазин? → где магазин?
-304. T2 frame — I want дом → я хочу дом
-305. T2 frame — I need дом → мне нужен дом
-306. T2 frame — Where is дом? → где дом?
-307. T2 frame — I want работа → я хочу работа
-308. T2 frame — I need работа → мне нужен работа
-309. T2 frame — Where is работа? → где работа?
-310. T2 frame — I want кафе → я хочу кафе
-311. T2 frame — I need кафе → мне нужен кафе
-312. T2 frame — Where is кафе? → где кафе?
-313. T2 frame — I want метро → я хочу метро
-314. T2 frame — I need метро → мне нужен метро
-315. T2 frame — Where is метро? → где метро?
-316. T2 frame — I want автобус → я хочу автобус
-317. T2 frame — I need автобус → мне нужен автобус
-318. T2 frame — Where is автобус? → где автобус?
-319. T2 frame — I want лекарство → я хочу лекарство
-320. T2 frame — I need лекарство → мне нужен лекарство
-321. T2 frame — Where is лекарство? → где лекарство?
-322. T2 frame — I want молоко → я хочу молоко
-323. T2 frame — I need молоко → мне нужен молоко
-324. T2 frame — Where is молоко? → где молоко?
-325. T2 frame — I want сыр → я хочу сыр
-326. T2 frame — I need сыр → мне нужен сыр
-327. T2 frame — Where is сыр? → где сыр?
-328. T2 frame — I want салат → я хочу салат
-329. T2 frame — I need салат → мне нужен салат
-330. T2 frame — Where is салат? → где салат?
-331. T2 frame — I want сахар → я хочу сахар
-332. T2 frame — I need сахар → мне нужен сахар
-333. T2 frame — Where is сахар? → где сахар?
-334. T2 frame — I want соль → я хочу соль
-335. T2 frame — I need соль → мне нужен соль
-336. T2 frame — Where is соль? → где соль?
-337. T2 frame — I want to помочь → я хочу помочь
-338. T2 frame — I can помочь → я могу помочь
-339. T2 frame — I need to помочь → мне нужно помочь
-340. T2 frame — I want to есть → я хочу есть
-341. T2 frame — I can есть → я могу есть
-342. T2 frame — I need to есть → мне нужно есть
-343. T2 frame — I want to пить → я хочу пить
-344. T2 frame — I can пить → я могу пить
-345. T2 frame — I need to пить → мне нужно пить
-346. T2 frame — I want to идти → я хочу идти
-347. T2 frame — I can идти → я могу идти
-348. T2 frame — I need to идти → мне нужно идти
-349. T2 frame — I want to ехать → я хочу ехать
-350. T2 frame — I can ехать → я могу ехать
-351. T2 frame — I need to ехать → мне нужно ехать
-352. T2 frame — I want to спать → я хочу спать
-353. T2 frame — I can спать → я могу спать
-354. T2 frame — I need to спать → мне нужно спать
-355. T2 frame — I want to работать → я хочу работать
-356. T2 frame — I can работать → я могу работать
-357. T2 frame — I need to работать → мне нужно работать
-358. T2 frame — I want to отдыхать → я хочу отдыхать
-359. T2 frame — I can отдыхать → я могу отдыхать
-360. T2 frame — I need to отдыхать → мне нужно отдыхать
-361. T2 frame — I want to позвонить → я хочу позвонить
-362. T2 frame — I can позвонить → я могу позвонить
-363. T2 frame — I need to позвонить → мне нужно позвонить
-364. T2 frame — I want to купить → я хочу купить
-365. T2 frame — I can купить → я могу купить
-366. T2 frame — I need to купить → мне нужно купить
-367. T2 frame — I want to готовить → я хочу готовить
-368. T2 frame — I can готовить → я могу готовить
-369. T2 frame — I need to готовить → мне нужно готовить
-370. T2 frame — I want to ждать → я хочу ждать
-371. T2 frame — I can ждать → я могу ждать
-372. T2 frame — I need to ждать → мне нужно ждать
-373. T2 frame — I want to сказать → я хочу сказать
-374. T2 frame — I can сказать → я могу сказать
-375. T2 frame — I need to сказать → мне нужно сказать
-376. T2 frame — I want to спросить → я хочу спросить
-377. T2 frame — I can спросить → я могу спросить
-378. T2 frame — I need to спросить → мне нужно спросить
-379. T2 frame — I want to посмотреть → я хочу посмотреть
-380. T2 frame — I can посмотреть → я могу посмотреть
-381. T2 frame — I need to посмотреть → мне нужно посмотреть
-382. T2 lexeme — дорога → дорога
-383. T2 lexeme — страна → страна
-384. T2 lexeme — мир → мир
-385. T2 lexeme — вещь → вещь
-386. T2 lexeme — имя → имя
-387. T2 lexeme — лицо → лицо
-388. T2 lexeme — голос → голос
-389. T2 lexeme — вода → вода
-390. T2 lexeme — земля → земля
-391. T2 lexeme — сторона → сторона
-392. T2 lexeme — школа → школа
-393. T2 lexeme — неделя → неделя
-394. T2 lexeme — месяц → месяц
-395. T2 lexeme — вечером → вечером
-396. T2 lexeme — утром → утром
-397. T2 lexeme — суббота → суббота
-398. T2 lexeme — воскресенье → воскресенье
-399. T2 lexeme — понедельник → понедельник
-400. T2 lexeme — вторник → вторник
-401. T2 lexeme — среда → среда
-402. T2 lexeme — четверг → четверг
-403. T2 lexeme — пятница → пятница
-404. T2 lexeme — семь → семь
-405. T2 lexeme — восемь → восемь
-406. T2 lexeme — девять → девять
-407. T2 lexeme — десять → десять
-408. T2 lexeme — сначала → сначала
-409. T2 lexeme — после → после
-410. T2 lexeme — перед → перед
-411. T2 lexeme — между → между
-412. T2 lexeme — около → около
-413. T2 lexeme — правда → правда
-414. T2 lexeme — конечно → конечно
-415. T2 lexeme — может → может
-416. T2 lexeme — нельзя → нельзя
-417. T2 lexeme — готов → готов
-418. T2 lexeme — понятно → понятно
-419. T2 lexeme — ясно → ясно
-420. T2 lexeme — интересно → интересно
-421. T2 lexeme — любимый → любимый
-422. T2 lexeme — сильный → сильный
-423. T2 lexeme — слабый → слабый
-424. T2 lexeme — лёгкий → лёгкий
-425. T2 lexeme — трудный → трудный
-426. T2 lexeme — дорогой → дорогой
-427. T2 lexeme — дешёвый → дешёвый
-428. T2 lexeme — чистый → чистый
-429. T2 lexeme — грязный → грязный
-430. T2 lexeme — светлый → светлый
-431. T2 lexeme — тёмный → тёмный
-432. T2 lexeme — сладкий → сладкий
-433. T2 lexeme — кислый → кислый
-434. T2 lexeme — острый → острый
-435. T2 lexeme — сухой → сухой
-436. T2 lexeme — мокрый → мокрый
-437. T2 lexeme — полный → полный
-438. T2 lexeme — пустой → пустой
-439. T2 lexeme — отец → отец
-440. T2 lexeme — мать → мать
-441. T2 lexeme — мальчик → мальчик
-442. T2 lexeme — девочка → девочка
-443. T2 lexeme — сосед → сосед
-444. T2 lexeme — подруга → подруга
-445. T2 lexeme — семейный → семейный
-446. T2 lexeme — ключ → ключ
-447. T2 lexeme — сумка → сумка
-448. T2 lexeme — одежда → одежда
-449. T2 lexeme — обувь → обувь
-450. T2 lexeme — пальто → пальто
-451. T2 lexeme — рубашка → рубашка
-452. T2 lexeme — чашка → чашка
-453. T2 lexeme — бутылка → бутылка
-454. T2 lexeme — холодильник → холодильник
-455. T2 lexeme — плита → плита
-456. T2 lexeme — душ → душ
-457. T2 lexeme — пол → пол
-458. T2 lexeme — стена → стена
-459. T2 lexeme — лампа → лампа
-460. T2 lexeme — интернет → интернет
-461. T2 lexeme — адрес → адрес
-462. T2 lexeme — карта → карта
-463. T2 lexeme — паспорт → паспорт
-464. T2 lexeme — багаж → багаж
-465. T2 lexeme — остановка → остановка
-466. T2 lexeme — такси → такси
-467. T2 lexeme — самолёт → самолёт
-468. T2 lexeme — граница → граница
-469. T2 lexeme — отель → отель
-470. T2 lexeme — номер → номер
-471. T2 lexeme — музей → музей
-472. T2 lexeme — река → река
-473. T2 lexeme — море → море
-474. T2 lexeme — лес → лес
-475. T2 lexeme — погода → погода
-476. T2 lexeme — дождь → дождь
-477. T2 lexeme — снег → снег
-478. T2 lexeme — солнце → солнце
-479. T2 lexeme — ветер → ветер
-480. T2 lexeme — тепло → тепло
-481. T2 lexeme — холодно → холодно
-482. T2 phrase — хороший день → хороший день
-483. T2 phrase — хороший дом → хороший дом
-484. T2 phrase — хороший чай → хороший чай
-485. T2 phrase — хороший суп → хороший суп
-486. T2 phrase — хороший город → хороший город
-487. T2 phrase — хороший вопрос → хороший вопрос
-488. T2 phrase — хороший ответ → хороший ответ
-489. T2 phrase — хороший план → хороший план
-490. T2 phrase — хороший вечер → хороший вечер
-491. T2 phrase — хороший человек → хороший человек
-492. T2 phrase — хороший магазин → хороший магазин
-493. T2 phrase — хороший стол → хороший стол
-494. T2 phrase — хороший телефон → хороший телефон
-495. T2 phrase — хороший билет → хороший билет
-496. T2 phrase — хороший номер → хороший номер
-497. T2 phrase — плохой день → плохой день
-498. T2 phrase — плохой дом → плохой дом
-499. T2 phrase — плохой чай → плохой чай
-500. T2 phrase — плохой суп → плохой суп
+157. T1 lexeme — person → человек
+158. T1 lexeme — time → время
+159. T1 lexeme — year → год
+160. T1 lexeme — time / instance → раз
+161. T1 lexeme — matter / thing to do → дело
+162. T1 lexeme — hand / arm → рука
+163. T1 lexeme — eye → глаз
+164. T1 lexeme — place → место
+165. T1 lexeme — life → жизнь
+166. T1 lexeme — word → слово
+167. T1 lexeme — friend → друг
+168. T1 lexeme — city → город
+169. T1 lexeme — car → машина
+170. T1 lexeme — door → дверь
+171. T1 lexeme — window → окно
+172. T1 lexeme — phone → телефон
+173. T1 lexeme — money → деньги
+174. T1 lexeme — ticket → билет
+175. T1 lexeme — train → поезд
+176. T1 lexeme — bus → автобус
+177. T1 lexeme — metro → метро
+178. T1 lexeme — airport → аэропорт
+179. T1 lexeme — station → вокзал
+180. T1 lexeme — restaurant → ресторан
+181. T1 lexeme — café → кафе
+182. T1 lexeme — milk → молоко
+183. T1 lexeme — cheese → сыр
+184. T1 lexeme — egg → яйцо
+185. T1 lexeme — chicken → курица
+186. T1 lexeme — rice → рис
+187. T1 lexeme — salad → салат
+188. T1 lexeme — apple → яблоко
+189. T1 lexeme — knife → нож
+190. T1 lexeme — fork → вилка
+191. T1 lexeme — spoon → ложка
+192. T1 lexeme — plate → тарелка
+193. T1 lexeme — glass → стакан
+194. T1 lexeme — hot → горячий
+195. T1 lexeme — cold → холодный
+196. T1 lexeme — new → новый
+197. T1 lexeme — old → старый
+198. T1 lexeme — beautiful → красивый
+199. T1 lexeme — Russian → русский
+200. T1 lexeme — English → английский
+201. T1 lexeme — Bulgarian → болгарский
+202. T1 lexeme — important → важный
+203. T1 lexeme — okay / normally → нормально
+204. T1 lexeme — quickly → быстро
+205. T1 lexeme — slowly → медленно
+206. T1 lexeme — together → вместе
+207. T1 lexeme — one (review word) → один
+208. T1 lexeme — two (review word) → два
+209. T1 lexeme — three (review word) → три
+210. T1 lexeme — four → четыре
+211. T1 lexeme — five → пять
+212. T1 lexeme — first → первый
+213. T1 lexeme — last → последний
+214. T1 lexeme — every / each → каждый
+215. T1 lexeme — always → всегда
+216. T1 lexeme — sometimes → иногда
+217. T1 lexeme — never → никогда
+218. T1 lexeme — already → уже
+219. T1 lexeme — more / still → ещё
+220. T1 lexeme — early → рано
+221. T1 lexeme — late → поздно
+222. T1 lexeme — here (review word) → здесь
+223. T1 lexeme — there / to there → туда
+224. T1 lexeme — here / to here → сюда
+225. T1 lexeme — back → назад
+226. T1 lexeme — forward → вперёд
+227. T1 lexeme — center → центр
+228. T1 lexeme — park → парк
+229. T1 lexeme — pharmacy → аптека
+230. T1 lexeme — doctor → врач
+231. T1 lexeme — temperature / fever → температура
+232. T1 lexeme — head → голова
+233. T1 lexeme — stomach / belly → живот
+234. T1 lexeme — it hurts → больно
+235. T1 lexeme — help → помощь
+236. T1 lexeme — question → вопрос
+237. T1 lexeme — answer → ответ
+238. T1 lexeme — plan → план
+239. T1 lexeme — meeting → встреча
+240. T1 lexeme — husband → муж
+241. T1 lexeme — wife → жена
+242. T1 lexeme — brother → брат
+243. T1 lexeme — sister → сестра
+244. T1 lexeme — grandmother → бабушка
+245. T1 lexeme — grandfather → дедушка
+246. T1 lexeme — child → ребёнок
+247. T1 lexeme — parents → родители
+248. T1 lexeme — guest → гость
+249. T1 lexeme — gift → подарок
+250. T1 lexeme — holiday / celebration → праздник
+251. T1 lexeme — to clean / tidy → убирать
+252. T1 lexeme — to cook → готовить
+253. T1 lexeme — to buy → купить
+254. T1 lexeme — to find → найти
+255. T1 lexeme — to show → показать
+256. T1 lexeme — to open → открыть
+257. T1 lexeme — to close → закрыть
+258. T1 lexeme — to call by phone → позвонить
+259. T1 lexeme — to write → писать
+260. T1 lexeme — to read → читать
+261. T1 lexeme — to learn / teach → учить
+262. T1 lexeme — to remember → помнить
+263. T1 lexeme — to forget → забыть
+264. T1 lexeme — to begin → начать
+265. T1 lexeme — to finish → кончить
+266. T1 lexeme — to sit → сидеть
+267. T1 lexeme — to stand → стоять
+268. T1 lexeme — to lie down → лежать
+269. T1 lexeme — to walk / stroll → гулять
+270. T1 lexeme — to rest → отдыхать
+271. T1 lexeme — to pay → платить
+272. T1 lexeme — to order → заказать
+273. T1 lexeme — to bring → принести
+274. T1 lexeme — to try → попробовать
+275. T1 lexeme — to be sick → болеть
+276. T1 lexeme — to call / ring → звонить
+277. T1 frame — I would like some tea. → я хочу чай
+278. T1 frame — Could I have some water? → можно воды?
+279. T1 frame — I would like coffee, please. → кофе, пожалуйста
+280. T1 frame — I would like soup. → я хочу суп
+281. T1 frame — Could I have bread? → можно хлеб?
+282. T1 frame — I need help. → мне нужна помощь
+283. T1 frame — Where can I buy a ticket? → где купить билет?
+284. T1 frame — May I use the phone? → можно телефон?
+285. T1 frame — Where is the shop? → где магазин?
+286. T1 frame — I am going home. → я иду домой
+287. T1 frame — I have to work. → мне нужно работать
+288. T1 frame — Let’s go to a café. → пойдём в кафе
+289. T1 frame — Where is the metro? → где метро?
+290. T1 frame — Which bus do I need? → какой автобус мне нужен?
+291. T1 frame — I need medicine. → мне нужно лекарство
+292. T1 frame — Could I have milk? → можно молоко?
+293. T1 frame — I would like cheese. → я хочу сыр
+294. T1 frame — I will have a salad. → я буду салат
+295. T1 frame — No sugar, please. → без сахара, пожалуйста
+296. T1 frame — A little salt, please. → немного соли, пожалуйста
+297. T1 frame — What time is it? → который час?
+298. T1 frame — I am a little tired. → я немного устал
+299. T1 frame — It is cold today. → сегодня холодно
+300. T1 frame — It is warm here. → здесь тепло
+301. T2 frame — I feel sick. → я болею
+302. T2 frame — My head hurts. → у меня болит голова
+303. T2 frame — I have a question. → у меня вопрос
+304. T2 frame — I understand the answer. → я понимаю ответ
+305. T2 frame — We have a plan. → у нас есть план
+306. T2 frame — When is the meeting? → когда встреча?
+307. T2 frame — My girlfriend is from Bulgaria. → моя девушка из Болгарии
+308. T2 frame — Her mother speaks Russian. → её мама говорит по-русски
+309. T2 frame — I want to be polite. → я хочу быть вежливым
+310. T2 frame — I am glad to visit you. → я рад быть у вас
+311. T2 frame — Thank you for dinner. → спасибо за ужин
+312. T2 frame — Everything was very tasty. → всё было очень вкусно
+313. T2 frame — Can I wash the dishes? → можно помыть посуду?
+314. T2 frame — I can help in the kitchen. → я могу помочь на кухне
+315. T2 frame — Do you need anything? → вам что-нибудь нужно?
+316. T2 frame — I will wait here. → я подожду здесь
+317. T2 frame — Please show me. → покажите, пожалуйста
+318. T2 frame — Please open the door. → откройте дверь, пожалуйста
+319. T2 frame — Please close the window. → закройте окно, пожалуйста
+320. T2 frame — I need to call. → мне нужно позвонить
+321. T2 frame — I am learning Russian. → я учу русский
+322. T2 frame — I forgot the word. → я забыл слово
+323. T2 frame — Please write it. → напишите, пожалуйста
+324. T2 frame — I can read Cyrillic. → я умею читать кириллицу
+325. T2 frame — Can you say it again? → скажите ещё раз?
+326. T2 frame — I want to try it. → я хочу попробовать
+327. T2 frame — How do I pay? → как платить?
+328. T2 frame — Can I order this? → можно заказать это?
+329. T2 frame — Please bring water. → принесите воды, пожалуйста
+330. T2 frame — Let’s go for a walk. → давайте гулять
+331. T2 frame — I need to rest. → мне нужно отдохнуть
+332. T2 frame — I want to sleep. → я хочу спать
+333. T2 frame — I have to go. → мне нужно идти
+334. T2 frame — I will come tomorrow. → я приду завтра
+335. T2 frame — I will come by metro. → я приеду на метро
+336. T2 frame — See you later. → увидимся позже
+337. T2 frame — I want to help → я хочу помочь
+338. T2 frame — I can help → я могу помочь
+339. T2 frame — I need to help → мне нужно помочь
+340. T2 frame — I want to eat → я хочу есть
+341. T2 frame — I can eat → я могу есть
+342. T2 frame — I need to eat → мне нужно есть
+343. T2 frame — I want to drink → я хочу пить
+344. T2 frame — I can drink → я могу пить
+345. T2 frame — I need to drink → мне нужно пить
+346. T2 frame — I want to go on foot → я хочу идти
+347. T2 frame — I can go on foot → я могу идти
+348. T2 frame — I need to go on foot → мне нужно идти
+349. T2 frame — I want to go by transport → я хочу ехать
+350. T2 frame — I can go by transport → я могу ехать
+351. T2 frame — I need to go by transport → мне нужно ехать
+352. T2 frame — I want to sleep → я хочу спать
+353. T2 frame — I can sleep → я могу спать
+354. T2 frame — I need to sleep → мне нужно спать
+355. T2 frame — I want to work → я хочу работать
+356. T2 frame — I can work → я могу работать
+357. T2 frame — I need to work → мне нужно работать
+358. T2 frame — I want to rest → я хочу отдыхать
+359. T2 frame — I can rest → я могу отдыхать
+360. T2 frame — I need to rest → мне нужно отдыхать
+361. T2 frame — I want to call → я хочу позвонить
+362. T2 frame — I can call → я могу позвонить
+363. T2 frame — I need to call → мне нужно позвонить
+364. T2 frame — I want to buy → я хочу купить
+365. T2 frame — I can buy → я могу купить
+366. T2 frame — I need to buy → мне нужно купить
+367. T2 frame — I want to cook → я хочу готовить
+368. T2 frame — I can cook → я могу готовить
+369. T2 frame — I need to cook → мне нужно готовить
+370. T2 frame — I want to wait → я хочу ждать
+371. T2 frame — I can wait → я могу ждать
+372. T2 frame — I need to wait → мне нужно ждать
+373. T2 frame — I want to say → я хочу сказать
+374. T2 frame — I can say → я могу сказать
+375. T2 frame — I need to say → мне нужно сказать
+376. T2 frame — I want to ask → я хочу спросить
+377. T2 frame — I can ask → я могу спросить
+378. T2 frame — I need to ask → мне нужно спросить
+379. T2 frame — I want to look → я хочу посмотреть
+380. T2 frame — I can look → я могу посмотреть
+381. T2 frame — I need to look → мне нужно посмотреть
+382. T2 lexeme — road / way → дорога
+383. T2 lexeme — country → страна
+384. T2 lexeme — world / peace → мир
+385. T2 lexeme — thing → вещь
+386. T2 lexeme — name → имя
+387. T2 lexeme — face → лицо
+388. T2 lexeme — voice → голос
+389. T2 lexeme — water (as a noun) → вода
+390. T2 lexeme — earth / ground → земля
+391. T2 lexeme — side → сторона
+392. T2 lexeme — school → школа
+393. T2 lexeme — week → неделя
+394. T2 lexeme — month → месяц
+395. T2 lexeme — in the evening → вечером
+396. T2 lexeme — in the morning → утром
+397. T2 lexeme — Saturday → суббота
+398. T2 lexeme — Sunday → воскресенье
+399. T2 lexeme — Monday → понедельник
+400. T2 lexeme — Tuesday → вторник
+401. T2 lexeme — Wednesday → среда
+402. T2 lexeme — Thursday → четверг
+403. T2 lexeme — Friday → пятница
+404. T2 lexeme — seven → семь
+405. T2 lexeme — eight → восемь
+406. T2 lexeme — nine → девять
+407. T2 lexeme — ten → десять
+408. T2 lexeme — at first → сначала
+409. T2 lexeme — after → после
+410. T2 lexeme — before / in front of → перед
+411. T2 lexeme — between → между
+412. T2 lexeme — near / about → около
+413. T2 lexeme — truth / really → правда
+414. T2 lexeme — of course → конечно
+415. T2 lexeme — maybe / can → может
+416. T2 lexeme — not allowed → нельзя
+417. T2 lexeme — ready → готов
+418. T2 lexeme — understandable / clear → понятно
+419. T2 lexeme — clear → ясно
+420. T2 lexeme — interesting → интересно
+421. T2 lexeme — favorite / beloved → любимый
+422. T2 lexeme — strong → сильный
+423. T2 lexeme — weak → слабый
+424. T2 lexeme — easy / light → лёгкий
+425. T2 lexeme — difficult → трудный
+426. T2 lexeme — expensive / dear → дорогой
+427. T2 lexeme — cheap → дешёвый
+428. T2 lexeme — clean → чистый
+429. T2 lexeme — dirty → грязный
+430. T2 lexeme — light-colored / bright → светлый
+431. T2 lexeme — dark → тёмный
+432. T2 lexeme — sweet → сладкий
+433. T2 lexeme — sour → кислый
+434. T2 lexeme — spicy / sharp → острый
+435. T2 lexeme — dry → сухой
+436. T2 lexeme — wet → мокрый
+437. T2 lexeme — full → полный
+438. T2 lexeme — empty → пустой
+439. T2 lexeme — father → отец
+440. T2 lexeme — mother → мать
+441. T2 lexeme — boy → мальчик
+442. T2 lexeme — girl → девочка
+443. T2 lexeme — neighbor → сосед
+444. T2 lexeme — female friend / girlfriend → подруга
+445. T2 lexeme — family-related → семейный
+446. T2 lexeme — key → ключ
+447. T2 lexeme — bag → сумка
+448. T2 lexeme — clothes → одежда
+449. T2 lexeme — shoes → обувь
+450. T2 lexeme — coat → пальто
+451. T2 lexeme — shirt → рубашка
+452. T2 lexeme — cup → чашка
+453. T2 lexeme — bottle → бутылка
+454. T2 lexeme — refrigerator → холодильник
+455. T2 lexeme — stove → плита
+456. T2 lexeme — shower → душ
+457. T2 lexeme — floor → пол
+458. T2 lexeme — wall → стена
+459. T2 lexeme — lamp → лампа
+460. T2 lexeme — internet → интернет
+461. T2 lexeme — address → адрес
+462. T2 lexeme — map / card → карта
+463. T2 lexeme — passport → паспорт
+464. T2 lexeme — luggage → багаж
+465. T2 lexeme — stop → остановка
+466. T2 lexeme — taxi → такси
+467. T2 lexeme — airplane → самолёт
+468. T2 lexeme — border → граница
+469. T2 lexeme — hotel → отель
+470. T2 lexeme — room / number → номер
+471. T2 lexeme — museum → музей
+472. T2 lexeme — river → река
+473. T2 lexeme — sea → море
+474. T2 lexeme — forest → лес
+475. T2 lexeme — weather → погода
+476. T2 lexeme — rain → дождь
+477. T2 lexeme — snow → снег
+478. T2 lexeme — sun → солнце
+479. T2 lexeme — wind → ветер
+480. T2 lexeme — warm → тепло
+481. T2 lexeme — cold → холодно
+482. T2 phrase — a good day → хороший день
+483. T2 phrase — a good home → хороший дом
+484. T2 phrase — good tea → хороший чай
+485. T2 phrase — good soup → хороший суп
+486. T2 phrase — a good city → хороший город
+487. T2 phrase — a good question → хороший вопрос
+488. T2 phrase — a good answer → хороший ответ
+489. T2 phrase — a good plan → хороший план
+490. T2 phrase — a good evening → хороший вечер
+491. T2 phrase — a good person → хороший человек
+492. T2 phrase — a good shop → хороший магазин
+493. T2 phrase — a good table → хороший стол
+494. T2 phrase — a good phone → хороший телефон
+495. T2 phrase — a good ticket → хороший билет
+496. T2 phrase — a good room / number → хороший номер
+497. T2 phrase — a bad day → плохой день
+498. T2 phrase — a bad home → плохой дом
+499. T2 phrase — bad tea → плохой чай
+500. T2 phrase — bad soup → плохой суп
