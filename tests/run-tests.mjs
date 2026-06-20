@@ -1,1 +1,118 @@
-import fs from 'fs';const deck=JSON.parse(fs.readFileSync('src/data/deck.generated.json','utf8'));function ok(x,m){if(!x)throw Error(m)}function cid(id,t){return `${id}:${t}`}ok(cid('abc','production')==='abc:production','card id deterministic');let states={};for(const i of deck.items)for(const t of i.enabledCardTypes)states[cid(i.id,t)]={cardId:cid(i.id,t),itemId:i.id,cardType:t,reviewCount:0,due:'1970-01-01T00:00:00.000Z',successCount:0,intervalDays:0,lapses:0};let first=deck.items[0];states[cid(first.id,'production')].reviewCount=3;let migrated={...states};ok(migrated[cid(first.id,'production')].reviewCount===3,'preserve matching card state');function learned(s){return s.successCount>=2&&s.lastRating!=='again'&&new Date(s.due)-Date.now()>=3*864e5}ok(learned({successCount:2,lastRating:'good',due:new Date(Date.now()+4*864e5).toISOString()}),'learned status');try{let x={schemaVersion:2}; if(x.schemaVersion!==1) throw Error('Invalid progress export schema.'); ok(false,'malformed rejected')}catch{ok(true,'bad import rejected')}function h(x){let n=2166136261;for(let c of x){n^=c.charCodeAt(0);n=Math.imul(n,16777619)}return n>>>0}function makeQ(day='2026-06-17'){let arr=Object.values(states).sort((a,b)=>{let ia=deck.items.find(i=>i.id===a.itemId),ib=deck.items.find(i=>i.id===b.itemId);return ia.tier-ib.tier||h(a.cardId+day)-h(b.cardId+day)||ia.rank-ib.rank});let out=[];for(let c of arr){if(out.at(-1)?.itemId===c.itemId){let j=arr.findIndex(x=>!out.includes(x)&&x.itemId!==c.itemId);if(j>=0){out.push(arr[j]);arr[j]=c;continue}}if(!out.includes(c))out.push(c);if(out.length>=20)break}return out}let fresh=makeQ();ok(deck.items.find(i=>i.id===fresh[0].itemId).tier===1,'tier1 before tier2');ok(fresh.every((c,i)=>i===0||c.itemId!==fresh[i-1].itemId),'no adjacent same item in session');ok(makeQ('2026-06-17').map(x=>x.cardId).join('|')!==makeQ('2026-06-18').map(x=>x.cardId).join('|'),'daily randomized order changes');let prod=Object.values(states).filter(s=>s.cardType==='production').length/Object.keys(states).length;ok(prod>.5&&prod<.75,'queue proportions practical');ok(deck.items.length===500,'curriculum validation fixture');ok(deck.items.every(i=>i.english!==i.russian),'no Russian-as-English prompts');console.log('tests passed')
+import fs from 'fs';
+
+const deck = JSON.parse(fs.readFileSync('src/data/deck.generated.json', 'utf8'));
+const config = JSON.parse(fs.readFileSync('app.config.json', 'utf8'));
+const runtimeSource = fs.readFileSync('scripts/runtime.js', 'utf8');
+const buildSource = fs.readFileSync('scripts/build.mjs', 'utf8');
+
+function ok(condition, message) {
+  if (!condition) throw new Error(message);
+}
+
+function hash(value) {
+  let result = 2166136261;
+  for (const character of value) {
+    result ^= character.charCodeAt(0);
+    result = Math.imul(result, 16777619);
+  }
+  return result >>> 0;
+}
+
+function createStates() {
+  const states = {};
+  for (const item of deck.items) {
+    for (const cardType of item.enabledCardTypes) {
+      const cardId = `${item.id}:${cardType}`;
+      states[cardId] = {
+        cardId,
+        itemId: item.id,
+        cardType,
+        reviewCount: 0,
+        due: '1970-01-01T00:00:00.000Z',
+        successCount: 0,
+        intervalDays: 0,
+        lapses: 0,
+      };
+    }
+  }
+  return states;
+}
+
+function freshQueue(states, day, limit = 20) {
+  const cardsByItem = new Map();
+  for (const card of Object.values(states).filter(card => card.reviewCount === 0)) {
+    const cards = cardsByItem.get(card.itemId) || [];
+    cards.push(card);
+    cardsByItem.set(card.itemId, cards);
+  }
+  const orderedItems = [...cardsByItem.keys()]
+    .map(id => deck.items.find(item => item.id === id))
+    .sort((a, b) => a.tier - b.tier || a.rank - b.rank);
+  const itemWindows = [];
+  for (const tier of [1, 2]) {
+    const tierItems = orderedItems.filter(item => item.tier === tier);
+    for (let start = 0; start < tierItems.length; start += config.queueNoiseWindow) {
+      const window = tierItems.slice(start, start + config.queueNoiseWindow);
+      window.sort((a, b) => hash(a.id + day) - hash(b.id + day) || a.rank - b.rank);
+      itemWindows.push(window);
+    }
+  }
+  const candidates = [];
+  for (const window of itemWindows) {
+    const groups = window.map(item => cardsByItem.get(item.id) || []);
+    const rounds = Math.max(...groups.map(cards => cards.length));
+    for (let round = 0; round < rounds; round += 1) {
+      for (const cards of groups) if (cards[round]) candidates.push(cards[round]);
+    }
+  }
+  const result = [];
+  const groups = [
+    candidates.filter(card => deck.items.find(item => item.id === card.itemId).tier === 1),
+    candidates.filter(card => deck.items.find(item => item.id === card.itemId).tier === 2),
+  ];
+  for (const group of groups) {
+    while (group.length && result.length < limit) {
+      let index = 0;
+      if (result.at(-1)?.itemId === group[0].itemId) {
+        const alternative = group.findIndex(card => card.itemId !== result.at(-1).itemId);
+        if (alternative >= 0) index = alternative;
+      }
+      result.push(group.splice(index, 1)[0]);
+    }
+  }
+  return result;
+}
+
+ok(deck.items.length === 500, 'curriculum contains 500 items');
+ok(deck.items.every(item => item.english !== item.russian), 'English prompts do not repeat Russian');
+ok(
+  deck.items.filter(item => item.rank >= 386).every(item => !/[А-Яа-яЁё]/.test(item.english)),
+  'ranks 386-500 contain real English glosses',
+);
+
+const states = createStates();
+const dayOne = freshQueue(states, '2026-06-20');
+const dayTwo = freshQueue(createStates(), '2026-06-21');
+const fullFreshQueue = freshQueue(createStates(), '2026-06-20', 1000);
+const ranks = dayOne.map(card => deck.items.find(item => item.id === card.itemId).rank);
+
+ok(dayOne.every((card, index) => index === 0 || card.itemId !== dayOne[index - 1].itemId), 'sibling cards are separated');
+ok(Math.max(...ranks) <= config.queueNoiseWindow * 2, 'first session remains inside the first two chronological windows');
+ok(ranks.some((rank, index) => index > 0 && rank < ranks[index - 1]), 'session includes gentle local variation');
+ok(dayOne.map(card => card.cardId).join('|') !== dayTwo.map(card => card.cardId).join('|'), 'local variation changes by day');
+const firstTierTwo = fullFreshQueue.findIndex(card => deck.items.find(item => item.id === card.itemId).tier === 2);
+ok(
+  fullFreshQueue.slice(firstTierTwo).every(card => deck.items.find(item => item.id === card.itemId).tier === 2),
+  'gentle noise never crosses the tier boundary',
+);
+
+ok(config.dataSchemaVersion === 2, 'breaking update increments the data schema');
+ok(runtimeSource.includes('ru500-pre-update-backup'), 'legacy progress is backed up locally');
+ok(runtimeSource.includes('Download snapshot and start fresh'), 'migration offers export before reset');
+ok(runtimeSource.includes("APP_CONFIG.migration === 'preserve-compatible'"), 'future compatible migrations can preserve matching progress');
+ok(runtimeSource.includes("registration.update()"), 'app explicitly checks for updates');
+ok(buildSource.includes("name.startsWith('ru500-')"), 'service worker removes obsolete caches');
+ok(buildSource.includes('self.skipWaiting()'), 'service worker activates updates promptly');
+ok(buildSource.includes("event.request.mode==='navigate'"), 'navigation uses a network-first update path');
+
+console.log('tests passed');

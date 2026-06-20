@@ -1,0 +1,6 @@
+{
+  "appVersion": "2026.06.20.2",
+  "dataSchemaVersion": 2,
+  "migration": "reset-required",
+  "queueNoiseWindow": 8
+}
