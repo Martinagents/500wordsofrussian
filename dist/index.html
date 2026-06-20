@@ -1,5 +1,5 @@
-<!doctype html><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel=manifest href=manifest.webmanifest><title>500 Words of Russian</title><style>:root{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color:#10202f;background:#f7fbff}body{margin:0;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}header,main{max-width:760px;margin:auto;padding:16px}nav{display:flex;gap:6px;overflow:auto}button,input,select{font:inherit;border:1px solid #9bb3c8;border-radius:12px;padding:12px;margin:4px;background:white}button{min-height:44px}.active,.cta{background:#14324a;color:white}.hero,.card,.item,.study section{background:white;border:1px solid #d8e3ec;border-radius:18px;padding:16px;margin:10px 0;box-shadow:0 1px 2px #0001}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}.card strong,.card b{display:block;font-size:1.6rem}.study h2{font-size:2rem}.ratings{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.status{font-size:.9rem;color:#375}progress{width:100%;height:18px}button:focus,input:focus{outline:3px solid #ffbf47}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
-</style><div id=app></div><script>const DECK={
+<!doctype html><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel=manifest href=manifest.webmanifest><title>500 Words of Russian</title><style>:root{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color:#10202f;background:#f7fbff}body{margin:0;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}header,main{max-width:760px;margin:auto;padding:16px}nav{display:flex;gap:6px;overflow:auto}button,input,select{font:inherit;border:1px solid #9bb3c8;border-radius:12px;padding:12px;margin:4px;background:white}button{min-height:44px}.active,.cta{background:#14324a;color:white}.hero,.card,.item,.study section,.update-panel{background:white;border:1px solid #d8e3ec;border-radius:18px;padding:16px;margin:10px auto;box-shadow:0 1px 2px #0001}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}.card strong,.card b{display:block;font-size:1.6rem}.study h2{font-size:2rem}.ratings{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.status{font-size:.9rem;color:#375}.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.75rem;color:#567}.update-panel button{display:block;width:100%;margin:10px 0}progress{width:100%;height:18px}button:focus,input:focus{outline:3px solid #ffbf47}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style><div id=app></div><script>const APP_CONFIG={"appVersion":"2026.06.20.2","dataSchemaVersion":2,"migration":"reset-required","queueNoiseWindow":8};const DECK={
   "deckVersion": "2026.06.17-mvp",
   "sources": [
     "wordfreq-ru-2026",
@@ -25608,5 +25608,388 @@
       }
     }
   ]
-};const $=s=>document.querySelector(s),state=JSON.parse(localStorage.ru500||'{}');state.cards=state.cards||{};state.daily=state.daily||{};state.settings=state.settings||{targetDate:'2026-07-15',dailyNewTarget:20};function cid(i,t){return i.id+':'+t}for(const i of DECK.items)for(const t of i.enabledCardTypes)state.cards[cid(i,t)]??={cardId:cid(i,t),itemId:i.id,cardType:t,due:'1970-01-01T00:00:00.000Z',intervalDays:0,reviewCount:0,successCount:0,lapses:0};function save(){localStorage.ru500=JSON.stringify(state)}function learned(c){return c&&c.successCount>=2&&c.lastRating!='again'&&new Date(c.due)-Date.now()>=3*864e5}function play(t){let u=new SpeechSynthesisUtterance(t);u.lang='ru-RU';speechSynthesis.speak(u)}let tab='today',cur=0,queue=[],show=false;function nav(){return ['today','study','progress','library','data'].map(t=>`<button onclick="tab='${t}';render()" class=${tab==t?'active':''}>${t}</button>`).join('')}function due(){return Object.values(state.cards).filter(c=>new Date(c.due)<=new Date()&&c.reviewCount>0).length}function h(x){let n=2166136261;for(let c of x){n^=c.charCodeAt(0);n=Math.imul(n,16777619)}return n>>>0}function makeQ(){let day=new Date().toISOString().slice(0,10),arr=Object.values(state.cards).sort((a,b)=>{let ia=DECK.items.find(i=>i.id==a.itemId),ib=DECK.items.find(i=>i.id==b.itemId);let dueA=new Date(a.due)<=new Date()&&a.reviewCount>0,dueB=new Date(b.due)<=new Date()&&b.reviewCount>0;return (dueB-dueA)||ia.tier-ib.tier||h(a.cardId+day)-h(b.cardId+day)||ia.rank-ib.rank});let out=[];for(let c of arr){if(out.at(-1)?.itemId==c.itemId){let j=arr.findIndex(x=>!out.includes(x)&&x.itemId!=c.itemId);if(j>=0){out.push(arr[j]);arr[j]=c;continue}}if(!out.includes(c))out.push(c);if(out.length>=state.settings.dailyNewTarget)break}return out}function rate(r){let c=queue[cur],int=r=='again'?0.02:Math.max(1,Math.ceil((c.intervalDays||1)*({hard:1,good:2.5,easy:4}[r]||0)));Object.assign(c,{intervalDays:int,due:new Date(Date.now()+int*864e5).toISOString(),reviewCount:c.reviewCount+1,successCount:c.successCount+(r=='again'?0:1),lastRating:r,lastReviewedAt:new Date().toISOString()});let d=new Date().toISOString().slice(0,10);state.daily[d]??={date:d,studied:0,ratings:{}};state.daily[d].studied++;save();cur++;show=false;render()}function render(){let enc=DECK.items.filter(i=>i.enabledCardTypes.some(t=>state.cards[cid(i,t)].reviewCount)).length, lea=DECK.items.filter(i=>i.enabledCardTypes.some(t=>learned(state.cards[cid(i,t)]))).length;app.innerHTML=`<header><h1>500 Words of Russian</h1><nav>${nav()}</nav><p class=status>Ready for offline use after first load.</p></header><main id=m></main>`;let m=$('#m');if(tab=='today'){let d=Math.ceil((new Date(state.settings.targetDate)-Date.now())/864e5),done=state.daily[new Date().toISOString().slice(0,10)]?.studied||0;m.innerHTML=`<section class=hero><h2>Today</h2><p>${Math.max(0,d)} days to target</p><progress value=${done} max=${state.settings.dailyNewTarget}></progress><button class=cta onclick="tab='study';queue=makeQ();cur=0;render()">Start Study</button></section><div class=grid><section class=card>Reviews due <b>${due()}</b></section><section class=card>Encountered <b>${enc}</b></section><section class=card>Learned <b>${lea}</b></section><section class=card>Tier 1 <b>${DECK.items.filter(i=>i.tier==1&&i.enabledCardTypes.some(t=>state.cards[cid(i,t)].reviewCount)).length}/300</b></section></div>`}if(tab=='study'){if(!queue.length)queue=makeQ();let c=queue[cur],i=c&&DECK.items.find(x=>x.id==c.itemId);m.className='study';m.innerHTML=!c?'<h2>Empty study queue.</h2>':`<p>${c.cardType} · ${queue.length-cur} left</p>${c.cardType=='listening'?`<button onclick="play('${i.russian}')">Play audio</button>`:`<h2>${c.cardType=='reading'?i.russian:i.english}</h2>`}${!show?`<button class=cta onclick="show=true;render()">Reveal</button>`:`<section><h2>${i.russian}</h2><p>${i.english}</p><button onclick="play('${i.russian}')">Play Audio</button><div class=ratings>${['again','hard','good','easy'].map(r=>`<button onclick="rate('${r}')">${r}</button>`).join('')}</div></section>`}`}if(tab=='progress')m.innerHTML=`<h2>Progress</h2><div class=grid><section class=card>Total reviews <b>${Object.values(state.cards).reduce((a,c)=>a+c.reviewCount,0)}</b></section><section class=card>Encountered <b>${enc}</b></section><section class=card>Learned <b>${lea}</b></section></div>`;if(tab=='library')m.innerHTML='<h2>Library</h2><input oninput="renderLib(this.value)" placeholder=Search><div id=list></div>',renderLib('');if(tab=='data')m.innerHTML=`<h2>Data and settings</h2><button onclick="exportData()">Export Progress</button><input type=file onchange="importData(this.files[0])"><button onclick="if(confirm('Reset?')){localStorage.removeItem('ru500');location.reload()}">Reset Progress</button><p>Deck ${DECK.deckVersion}</p>`}function renderLib(q){list.innerHTML=DECK.items.filter(i=>(i.english+i.russian).toLowerCase().includes(q.toLowerCase())).map(i=>`<details class=item><summary>${i.rank}. ${i.english} — ${i.russian}</summary><p>${i.tags.join(', ')}</p><p>Sources: ${i.provenance.sources.join(', ')}</p><button onclick="play('${i.russian}')">Audio</button></details>`).join('')}function exportData(){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({schemaVersion:1,exportedAt:new Date().toISOString(),deckVersion:DECK.deckVersion,cardStates:state.cards,dailyActivity:state.daily,settings:state.settings},null,2)]));a.download='russian-progress.json';a.click()}async function importData(f){let x=JSON.parse(await f.text());if(x.schemaVersion!==1)throw Error('bad schema');Object.assign(state.cards,x.cardStates);state.daily={...state.daily,...x.dailyActivity};save();alert('Imported matching card records');render()}navigator.serviceWorker?.register('./sw.js');render();
+};const $ = selector => document.querySelector(selector);
+const STATE_KEY = 'ru500';
+const BACKUP_KEY = 'ru500-pre-update-backup';
+const CARD_TYPE_ORDER = ['production', 'listening', 'reading'];
+const today = () => new Date().toISOString().slice(0, 10);
+
+let pendingMigration = null;
+let state = loadState();
+let tab = 'today';
+let currentCard = 0;
+let queue = [];
+let answerVisible = false;
+
+function defaultState() {
+  return {
+    dataSchemaVersion: APP_CONFIG.dataSchemaVersion,
+    appVersion: APP_CONFIG.appVersion,
+    deckVersion: DECK.deckVersion,
+    cards: {},
+    daily: {},
+    settings: { targetDate: '2026-07-15', dailyNewTarget: 20 },
+  };
+}
+
+function hasProgress(candidate) {
+  return Object.values(candidate?.cards || {}).some(card => card.reviewCount > 0)
+    || Object.keys(candidate?.daily || {}).length > 0;
+}
+
+function hydrateCards(candidate) {
+  for (const item of DECK.items) {
+    for (const cardType of item.enabledCardTypes) {
+      const id = cardId(item, cardType);
+      candidate.cards[id] ??= {
+        cardId: id,
+        itemId: item.id,
+        cardType,
+        due: '1970-01-01T00:00:00.000Z',
+        intervalDays: 0,
+        reviewCount: 0,
+        successCount: 0,
+        lapses: 0,
+      };
+    }
+  }
+  return candidate;
+}
+
+function preserveCompatibleState(stored) {
+  const migrated = hydrateCards(defaultState());
+  for (const [id, card] of Object.entries(stored.cards || {})) {
+    if (migrated.cards[id]) migrated.cards[id] = card;
+  }
+  migrated.daily = stored.daily || {};
+  migrated.settings = stored.settings || migrated.settings;
+  return migrated;
+}
+
+function loadState() {
+  let stored = null;
+  try {
+    stored = JSON.parse(localStorage.getItem(STATE_KEY) || 'null');
+  } catch {
+    stored = null;
+  }
+
+  if (stored && stored.dataSchemaVersion !== APP_CONFIG.dataSchemaVersion) {
+    if (APP_CONFIG.migration === 'preserve-compatible') {
+      return preserveCompatibleState(stored);
+    }
+    if (hasProgress(stored)) {
+      pendingMigration = stored;
+      return null;
+    }
+  }
+
+  const candidate = stored?.dataSchemaVersion === APP_CONFIG.dataSchemaVersion
+    ? stored
+    : defaultState();
+  candidate.appVersion = APP_CONFIG.appVersion;
+  candidate.deckVersion = DECK.deckVersion;
+  candidate.cards ||= {};
+  candidate.daily ||= {};
+  candidate.settings ||= defaultState().settings;
+  return hydrateCards(candidate);
+}
+
+function save() {
+  state.appVersion = APP_CONFIG.appVersion;
+  state.deckVersion = DECK.deckVersion;
+  localStorage.setItem(STATE_KEY, JSON.stringify(state));
+}
+
+function cardId(item, cardType) {
+  return `${item.id}:${cardType}`;
+}
+
+function itemFor(card) {
+  return DECK.items.find(item => item.id === card.itemId);
+}
+
+function hash(value) {
+  let result = 2166136261;
+  for (const character of value) {
+    result ^= character.charCodeAt(0);
+    result = Math.imul(result, 16777619);
+  }
+  return result >>> 0;
+}
+
+function freshCardsWithGentleNoise(day) {
+  const cardsByItem = new Map();
+  for (const card of Object.values(state.cards).filter(card => card.reviewCount === 0)) {
+    const cards = cardsByItem.get(card.itemId) || [];
+    cards.push(card);
+    cardsByItem.set(card.itemId, cards);
+  }
+
+  const orderedItems = [...cardsByItem.keys()]
+    .map(id => DECK.items.find(item => item.id === id))
+    .filter(Boolean)
+    .sort((a, b) => a.tier - b.tier || a.rank - b.rank);
+
+  const itemWindows = [];
+  for (const tier of [1, 2]) {
+    const tierItems = orderedItems.filter(item => item.tier === tier);
+    for (let start = 0; start < tierItems.length; start += APP_CONFIG.queueNoiseWindow) {
+      const window = tierItems.slice(start, start + APP_CONFIG.queueNoiseWindow);
+      window.sort((a, b) => hash(a.id + day) - hash(b.id + day) || a.rank - b.rank);
+      itemWindows.push(window);
+    }
+  }
+
+  const result = [];
+  for (const window of itemWindows) {
+    const cardGroups = window.map(item =>
+      (cardsByItem.get(item.id) || []).sort(
+        (a, b) => CARD_TYPE_ORDER.indexOf(a.cardType) - CARD_TYPE_ORDER.indexOf(b.cardType),
+      ),
+    );
+    const rounds = Math.max(0, ...cardGroups.map(cards => cards.length));
+    for (let round = 0; round < rounds; round += 1) {
+      for (const cards of cardGroups) {
+        if (cards[round]) result.push(cards[round]);
+      }
+    }
+  }
+  return result;
+}
+
+function takePriorityGroupsWithoutAdjacentSiblings(groups, limit) {
+  const result = [];
+  for (const group of groups) {
+    const remaining = [...group];
+    while (remaining.length && result.length < limit) {
+      let index = 0;
+      if (result.at(-1)?.itemId === remaining[0].itemId) {
+        const alternative = remaining.findIndex(card => card.itemId !== result.at(-1).itemId);
+        if (alternative >= 0) index = alternative;
+      }
+      result.push(remaining.splice(index, 1)[0]);
+    }
+  }
+  return result;
+}
+
+function makeQueue() {
+  const now = new Date();
+  const day = today();
+  const dueCards = Object.values(state.cards)
+    .filter(card => card.reviewCount > 0 && new Date(card.due) <= now)
+    .sort((a, b) => a.due.localeCompare(b.due) || hash(a.cardId + day) - hash(b.cardId + day));
+  const fresh = freshCardsWithGentleNoise(day);
+  return takePriorityGroupsWithoutAdjacentSiblings([
+    dueCards,
+    fresh.filter(card => itemFor(card)?.tier === 1),
+    fresh.filter(card => itemFor(card)?.tier === 2),
+  ], state.settings.dailyNewTarget);
+}
+
+function learned(card) {
+  return card
+    && card.successCount >= 2
+    && card.lastRating !== 'again'
+    && new Date(card.due) - Date.now() >= 3 * 864e5;
+}
+
+function dueCount() {
+  return Object.values(state.cards)
+    .filter(card => card.reviewCount > 0 && new Date(card.due) <= new Date()).length;
+}
+
+function play(text) {
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'ru-RU';
+  speechSynthesis.speak(utterance);
+}
+
+function rate(rating) {
+  const card = queue[currentCard];
+  const multiplier = { hard: 1, good: 2.5, easy: 4 }[rating] || 0;
+  const interval = rating === 'again'
+    ? 0.02
+    : Math.max(1, Math.ceil((card.intervalDays || 1) * multiplier));
+  Object.assign(card, {
+    intervalDays: interval,
+    due: new Date(Date.now() + interval * 864e5).toISOString(),
+    reviewCount: card.reviewCount + 1,
+    successCount: card.successCount + (rating === 'again' ? 0 : 1),
+    lapses: card.lapses + (rating === 'again' ? 1 : 0),
+    lastRating: rating,
+    lastReviewedAt: new Date().toISOString(),
+  });
+  const day = today();
+  state.daily[day] ??= { date: day, studied: 0, ratings: {} };
+  state.daily[day].studied += 1;
+  state.daily[day].ratings[rating] = (state.daily[day].ratings[rating] || 0) + 1;
+  save();
+  currentCard += 1;
+  answerVisible = false;
+  render();
+}
+
+function downloadJson(data, filename) {
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+  link.download = filename;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+}
+
+function exportProgress() {
+  downloadJson({
+    schemaVersion: APP_CONFIG.dataSchemaVersion,
+    exportedAt: new Date().toISOString(),
+    appVersion: APP_CONFIG.appVersion,
+    deckVersion: DECK.deckVersion,
+    cardStates: state.cards,
+    dailyActivity: state.daily,
+    settings: state.settings,
+  }, 'russian-progress.json');
+}
+
+function downloadLegacyProgress() {
+  downloadJson({
+    schemaVersion: pendingMigration.dataSchemaVersion || 1,
+    exportedAt: new Date().toISOString(),
+    deckVersion: pendingMigration.deckVersion || 'legacy',
+    cardStates: pendingMigration.cards || {},
+    dailyActivity: pendingMigration.daily || {},
+    settings: pendingMigration.settings || {},
+  }, 'russian-progress-before-update.json');
+}
+
+function startFreshAfterUpdate(downloadFirst = false) {
+  if (downloadFirst) downloadLegacyProgress();
+  localStorage.setItem(BACKUP_KEY, JSON.stringify({
+    backedUpAt: new Date().toISOString(),
+    reason: 'Reset required for data schema 2',
+    state: pendingMigration,
+  }));
+  localStorage.removeItem(STATE_KEY);
+  pendingMigration = null;
+  state = hydrateCards(defaultState());
+  save();
+  render();
+}
+
+function downloadStoredBackup() {
+  const backup = JSON.parse(localStorage.getItem(BACKUP_KEY) || 'null');
+  if (backup) downloadJson(backup, 'russian-progress-pre-update-backup.json');
+}
+
+async function importData(file) {
+  try {
+    const imported = JSON.parse(await file.text());
+    if (imported.schemaVersion !== APP_CONFIG.dataSchemaVersion) {
+      throw new Error(`This app accepts schema ${APP_CONFIG.dataSchemaVersion} exports only.`);
+    }
+    const validCardIds = new Set(Object.keys(state.cards));
+    let importedCount = 0;
+    for (const [id, card] of Object.entries(imported.cardStates || {})) {
+      if (validCardIds.has(id)) {
+        state.cards[id] = card;
+        importedCount += 1;
+      }
+    }
+    state.daily = { ...state.daily, ...(imported.dailyActivity || {}) };
+    state.settings = imported.settings || state.settings;
+    save();
+    alert(`Imported ${importedCount} matching card records.`);
+    render();
+  } catch (error) {
+    alert(error.message);
+  }
+}
+
+function renderNavigation() {
+  return ['today', 'study', 'progress', 'library', 'data']
+    .map(name => `<button onclick="tab='${name}';render()" class="${tab === name ? 'active' : ''}">${name}</button>`)
+    .join('');
+}
+
+function renderMigration() {
+  const reviews = Object.values(pendingMigration.cards || {})
+    .reduce((total, card) => total + (card.reviewCount || 0), 0);
+  app.innerHTML = `<main class="update-panel">
+    <p class="eyebrow">App update ${APP_CONFIG.appVersion}</p>
+    <h1>A clean study reset is required</h1>
+    <p>This release repairs the curriculum and changes how study sessions are ordered. Your previous data contains ${reviews} reviews and cannot be safely applied to the new data schema.</p>
+    <p>Your old progress will be backed up on this device automatically. You can also download a JSON snapshot before continuing.</p>
+    <button class="cta" onclick="startFreshAfterUpdate(true)">Download snapshot and start fresh</button>
+    <button onclick="startFreshAfterUpdate(false)">Start fresh without downloading</button>
+  </main>`;
+}
+
+function render() {
+  if (pendingMigration) {
+    renderMigration();
+    return;
+  }
+
+  const encountered = DECK.items.filter(item =>
+    item.enabledCardTypes.some(type => state.cards[cardId(item, type)].reviewCount),
+  ).length;
+  const learnedItems = DECK.items.filter(item =>
+    item.enabledCardTypes.some(type => learned(state.cards[cardId(item, type)])),
+  ).length;
+
+  app.innerHTML = `<header><h1>500 Words of Russian</h1><nav>${renderNavigation()}</nav><p class="status">App ${APP_CONFIG.appVersion} · offline ready</p></header><main id="main"></main>`;
+  const main = $('#main');
+
+  if (tab === 'today') {
+    const days = Math.ceil((new Date(state.settings.targetDate) - Date.now()) / 864e5);
+    const studied = state.daily[today()]?.studied || 0;
+    main.innerHTML = `<section class="hero"><h2>Today</h2><p>${Math.max(0, days)} days to target</p><progress value="${studied}" max="${state.settings.dailyNewTarget}"></progress><button class="cta" onclick="tab='study';queue=makeQueue();currentCard=0;render()">Start Study</button></section><div class="grid"><section class="card">Reviews due <b>${dueCount()}</b></section><section class="card">Encountered <b>${encountered}</b></section><section class="card">Learned <b>${learnedItems}</b></section><section class="card">Tier 1 <b>${DECK.items.filter(item => item.tier === 1 && item.enabledCardTypes.some(type => state.cards[cardId(item, type)].reviewCount)).length}/300</b></section></div>`;
+  }
+
+  if (tab === 'study') {
+    if (!queue.length) queue = makeQueue();
+    const card = queue[currentCard];
+    const item = card && itemFor(card);
+    main.className = 'study';
+    main.innerHTML = !card
+      ? '<h2>Empty study queue.</h2>'
+      : `<p>${card.cardType} · ${queue.length - currentCard} left</p>${card.cardType === 'listening' ? `<button onclick="play('${item.russian}')">Play audio</button>` : `<h2>${card.cardType === 'reading' ? item.russian : item.english}</h2>`}${!answerVisible ? '<button class="cta" onclick="answerVisible=true;render()">Reveal</button>' : `<section><h2>${item.russian}</h2><p>${item.english}</p><button onclick="play('${item.russian}')">Play Audio</button><div class="ratings">${['again', 'hard', 'good', 'easy'].map(rating => `<button onclick="rate('${rating}')">${rating}</button>`).join('')}</div></section>`}`;
+  }
+
+  if (tab === 'progress') {
+    const reviews = Object.values(state.cards).reduce((total, card) => total + card.reviewCount, 0);
+    main.innerHTML = `<h2>Progress</h2><div class="grid"><section class="card">Total reviews <b>${reviews}</b></section><section class="card">Encountered <b>${encountered}</b></section><section class="card">Learned <b>${learnedItems}</b></section></div>`;
+  }
+
+  if (tab === 'library') {
+    main.innerHTML = '<h2>Library</h2><input oninput="renderLibrary(this.value)" placeholder="Search"><div id="list"></div>';
+    renderLibrary('');
+  }
+
+  if (tab === 'data') {
+    const backupButton = localStorage.getItem(BACKUP_KEY)
+      ? '<button onclick="downloadStoredBackup()">Download pre-update backup</button>'
+      : '';
+    main.innerHTML = `<h2>Data and settings</h2><button onclick="exportProgress()">Export Progress</button><input type="file" onchange="importData(this.files[0])">${backupButton}<button onclick="if(confirm('Reset progress?')){localStorage.removeItem(STATE_KEY);location.reload()}">Reset Progress</button><p>App ${APP_CONFIG.appVersion} · data schema ${APP_CONFIG.dataSchemaVersion} · deck ${DECK.deckVersion}</p>`;
+  }
+}
+
+function renderLibrary(query) {
+  $('#list').innerHTML = DECK.items
+    .filter(item => (item.english + item.russian).toLowerCase().includes(query.toLowerCase()))
+    .map(item => `<details class="item"><summary>${item.rank}. ${item.english} — ${item.russian}</summary><p>${item.tags.join(', ')}</p><p>Sources: ${item.provenance.sources.join(', ')}</p><button onclick="play('${item.russian}')">Audio</button></details>`)
+    .join('');
+}
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').then(registration => {
+    registration.update();
+    setInterval(() => registration.update(), 30 * 60 * 1000);
+    registration.addEventListener('updatefound', () => {
+      registration.installing?.postMessage('SKIP_WAITING');
+    });
+  });
+}
+
+render();
 </script>

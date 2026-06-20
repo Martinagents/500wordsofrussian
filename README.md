@@ -36,9 +36,15 @@ Open the Pages URL in Safari, wait for the “ready for offline use” message, 
 Data/settings offers Export Progress (JSON), Import Progress, and Reset Progress. Imports validate schema before merging matching stable card IDs; removed IDs are ignored by the runtime.
 
 
-## Update behavior
+## Study ordering
 
-The June 2026 deck repair keeps the same schema and stable card IDs where possible, so an installed PWA can receive better English prompts and less repetitive phrase content without wiping progress. New queue selection shuffles unseen cards deterministically by day and avoids adjacent cards from the same item.
+Reviews that are due still come first. New material remains chronological, but each eight-item rank window receives deterministic daily variation. Cards for the same learning item are woven into separate rounds, and the final queue prevents adjacent sibling cards. This gives sessions some texture without jumping arbitrarily across the full curriculum.
+
+## Update and migration behavior
+
+`app.config.json` defines the application version, persistent-data schema, migration policy, and queue noise window. The build uses the application version in the service-worker cache name. A new service worker activates immediately, removes obsolete `ru500-*` caches, claims open clients, and reloads them onto the new shell. Navigations are network-first with an offline fallback, so an installed phone PWA no longer remains pinned to an old `index.html`.
+
+Persisted state records its data-schema, app, and deck versions. This release moves legacy data to schema 2 and deliberately requires a clean study start. Before resetting, the app displays a blocking explanation, offers a JSON download, and always keeps an on-device pre-update backup that remains downloadable from Data/settings. Future compatible releases can preserve schema-2 state without showing this migration screen.
 
 ## Limitations
 
